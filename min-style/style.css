@@ -280,6 +280,11 @@ justify-content: space-evenly;
 	font-weight: bolder;
 	border: none;
 	border-radius: 5px;
+	cursor: pointer;
+}
+.btn ion-icon{
+	font-size: 16px;
+	cursor: pointer;
 }
 
 .schedule{
@@ -356,11 +361,17 @@ justify-content: space-evenly;
 	align-items: center;
 }
 .class-method small{
-	font-size: 12px;
+	font-size: 10px;
 	color: rgba(0, 0, 0, 1.6);
+	margin-right: 20px;
 }
 .class-method a{
 	font-size: 12px;
+	font-weight: bolder;
+	text-decoration: none;
+	margin-right: 20px;
+	color: #0853C4;
+
 }
 
 .zoom-link{
@@ -373,6 +384,9 @@ justify-content: space-evenly;
 	justify-content: space-between;
 	margin: 3px 0;
 	padding: 0 10px;
+}
+.zoom-link:hover{
+	box-shadow: 0 0 10px -7px #0853C4;
 }
 
 
