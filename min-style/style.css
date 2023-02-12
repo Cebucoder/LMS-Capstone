@@ -396,7 +396,48 @@ justify-content: space-evenly;
 .materials{
 	width: 100%;
 	height: 100%;
-	background: lightgray;
+/*	background: lightgray;*/
+	position: relative;
+	overflow: hidden;
+}
+.materials-header label{
+	font-size: 13px;
+}
+.materials-content{
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	overflow-y: scroll;
+	padding: 5px 0;
+/*	background: pink;*/
+	position: absolute;
+}
+.subs-cont{
+	width: 100%;
+	height: 150px;
+/*	background: lightgray;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+/*	border-radius: 10px;*/
+}
+.subs{
+	width: 230px;
+	height: 130px;
+	background: #fff;
+	border-radius: 10px;
+}
+.sub1{
+	background: #0853C4;
+}
+.sub2{
+	background: #F55166;
+}
+.sub3{
+	background: #F55166;
+}
+.sub4{
+	background: #FCBC19;
 }
 
 @media only screen and (max-width:967px){
