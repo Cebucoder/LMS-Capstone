@@ -1,0 +1,19 @@
+/*font style*/
+/*Font Name ---Lexend Deca---*/
+/*font-family: 'Lexend Deca', sans-serif;*/
+/*@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Lexend Deca', sans-serif;
+}
+.main-container{
+	width: 100%;
+	height: 100vh;
+	background: pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
