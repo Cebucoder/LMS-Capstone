@@ -293,6 +293,46 @@ justify-content: space-evenly;
 	font-size: 11px;
 	padding-bottom: 5px;
 }
+.sched-time-cont{
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+}
+.calendar-icon{
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	background: pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #0853c424;
+	color: #0853C4;
+}
+.calendar-icon ion-icon{
+	font-size: 12px;
+
+}
+.time-teacher{
+	display: flex;
+	flex-direction: column;
+/*	background: pink;*/
+	width: auto;
+	height: 30px;
+	margin: 0 7px;
+}
+.time-teacher span{
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.time{
+	font-weight: bolder;
+}
+.teacher{
+	color: rgba(0, 0, 0, 0.7);
+}
+
 .zoom-link{
 	width: 100%;
 	height: 55px;
@@ -302,6 +342,7 @@ justify-content: space-evenly;
 	align-items: center;
 	justify-content: space-between;
 	margin: 3px 0;
+	padding: 0 10px;
 }
 
 
