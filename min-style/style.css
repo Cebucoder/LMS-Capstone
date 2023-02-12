@@ -332,6 +332,36 @@ justify-content: space-evenly;
 .teacher{
 	color: rgba(0, 0, 0, 0.7);
 }
+.lesson-cont{
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	font-weight: bolder;
+	display: flex;
+	align-items: center;
+
+}
+.lesson-cont span{
+	width: 5px;
+	height: 5px;
+	background: #0853C4;
+	margin-right: 10px;
+	border-radius: 50px;
+}
+
+.class-method{
+	display: flex;
+	width: auto;
+	height: auto;
+	align-items: center;
+}
+.class-method small{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 1.6);
+}
+.class-method a{
+	font-size: 12px;
+}
 
 .zoom-link{
 	width: 100%;
