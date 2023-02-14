@@ -31,7 +31,7 @@
 	position: fixed;
 }
 .sidebar{
-	width: 35%;
+	width: 30%;
 	max-width: 260px;
 	height: 100vh;
 	display: flex;

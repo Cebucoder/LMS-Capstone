@@ -4,9 +4,12 @@ let groups  = document.querySelector("#Groups-container");
 let subs  = document.querySelector("#Subject-container");
 let grade  = document.querySelector("#Grades-container");
 let inbox  = document.querySelector("#Inbox-container");
-// let active = document.querySelector(".active")
 
 
+
+
+// ================================================================
+// adding and removing active to li
 myFunction = function(event) {
   // reset all menu items
   document.querySelectorAll('li.active').forEach(function(item) {
@@ -15,9 +18,10 @@ myFunction = function(event) {
   // mark as active selected menu item
   event.target.classList.add("active");
 };
+// ================================================================
 
 
-
+// ==========================================================================
 // showing side bar menu content
 
 function dashboard() {
@@ -69,5 +73,20 @@ function inboxs() {
 	grade.classList.remove("show-Grades-container");
 	inbox.classList.add("show-Inbox-container");
 }
+// =========================================================================
 
+
+
+// show all function from subject
+
+function showAll(event){
+	dash.classList.add("hide-dashboard");
+	schedule.classList.add("show-incoming-lesson");
+
+	document.querySelectorAll('li.active').forEach(function(item) {
+  	item.classList.remove('active');
+})
+  // mark as active selected menu item
+  event.target.classList.add("active");
+};
 
