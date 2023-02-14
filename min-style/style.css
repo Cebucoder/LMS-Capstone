@@ -32,7 +32,7 @@
 }
 .sidebar{
 	width: 35%;
-	max-width: 250px;
+	max-width: 260px;
 	height: 100vh;
 	display: flex;
 	align-items: center ;
@@ -80,7 +80,7 @@ justify-content: space-evenly;
 	border-radius: 3px;
 	cursor: pointer;
 /*	transition: 0.2s;*/
-	margin: 1px 0;
+/*	margin: 1px 0;*/
 	color: #000000b0;
 	font-size: 14px;
 	font-weight: bolder;
@@ -98,7 +98,7 @@ justify-content: space-evenly;
 }
 .sidebar .active{
 	border-left: 3px solid #0853C4;
-/*	background: #0853c424;*/
+	background: #0853c424;
 	color: #0853C4;
 	font-weight: bolder;
 }
@@ -199,8 +199,16 @@ justify-content: space-evenly;
 	padding-left: 30px;
 /*	border-top-left-radius: 10px;*/
 /*	border-bottom-left-radius: 10px;*/
-/*	position: relative;*/
+/*	position: absolute;*/
+/*	display: none;*/
 }
+
+
+/*hiding dashboard*/
+.hide-dashboard{
+	display: none;
+}
+
 .dashboard label{
 	font-size: 25px;
 	font-weight: bolder;
@@ -228,6 +236,7 @@ justify-content: space-evenly;
 ::-webkit-scrollbar-thumb {
   background: #0853C4; 
   border-radius: 50px;
+  opacity: .7;
 }
 
 /*left dashboard content*/
@@ -406,7 +415,8 @@ justify-content: space-evenly;
 .materials-content{
 	width: 100%;
 	height: 220px;
-	max-height: 220px;
+/*	height: auto;*/
+	max-height: auto;
 	overflow-y: scroll;
 	padding: 5px 0;
 /*	background: pink;*/
@@ -438,6 +448,97 @@ justify-content: space-evenly;
 }
 .sub4{
 	background: #FCBC19;
+}
+
+
+/*#container{
+	width: 100%;
+	height: 100%;
+	background: pink;*/
+/*	position: absolute;*/
+/*	z-index: 1;*/
+/*	top: 0;*/
+/*	left: 0;*/
+/*}*/
+.incoming-lesson-container{
+/*	background: red;*/
+	width: 80%;
+	height: 100%;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.incoming-lesson-container label{
+	font-size: 25px;
+	font-weight: bolder;
+}
+.incoming-lessons{
+	width: 100%;
+	height: 500px;
+	max-height: 500px;
+	overflow-y: scroll;
+	padding-right: 10px;
+}
+.incoming-lessons label{
+	font-size: 13px;
+}
+
+.show-incoming-lesson{
+	display: flex;
+}
+
+
+.Groups-container{
+	background: lightgrey;
+	width: 80%;
+	height: 100%;
+/*	position: absolute;*/
+/*	right: 0;*/
+	display: none;
+}
+
+
+.show-Groups-container{
+	display: flex;
+}
+
+.Subject-container{
+	background: blue;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.show-Subject-container{
+	display: flex;
+}
+
+.Grades-container{
+	background: green;
+	width: 80%;
+	height: 100%;
+/*	position: absolute;*/
+/*	right: 0;*/
+	display: none;
+}
+
+.show-Grades-container{
+	display: flex;
+}
+
+.Inbox-container{
+	background: yellow;
+	width: 80%;
+	height: 100%;
+/*	position: absolute;*/
+/*	right: 0;*/
+	display: none;
+}
+
+.show-Inbox-container{
+	display: flex;
 }
 
 @media only screen and (max-width:967px){
