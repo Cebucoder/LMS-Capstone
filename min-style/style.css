@@ -461,7 +461,7 @@ justify-content: space-evenly;
 /*	left: 0;*/
 /*}*/
 .incoming-lesson-container{
-/*	background: red;*/
+	background: rgba(255, 255, 255, 0.4);
 	width: 80%;
 	height: 100%;
 	padding: 30px;
@@ -490,7 +490,7 @@ justify-content: space-evenly;
 
 
 .Groups-container{
-	background: lightgrey;
+	background: rgba(255, 255, 255, 0.4);
 	width: 80%;
 	height: 100%;
 /*	position: absolute;*/
@@ -504,19 +504,46 @@ justify-content: space-evenly;
 }
 
 .Subject-container{
-	background: blue;
+	background: rgba(255, 255, 255, 0.4);
+	width: 100%;
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
 	display: none;
 }
+.Subject-container label{
+	font-size: 25px;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+.Subject-container ion-icon{
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 25px;
+	margin: 10px;
+}
 
 .show-Subject-container{
 	display: flex;
 }
+.Subject-container .subs-cont{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: left;
+}
+.Subject-container .subs{
+	margin: 4px;
+	opacity: .9;
+	transition: 0.2s;
+}
+.Subject-container .subs:hover{
+	opacity: 1;
+	box-shadow: 0 0 10px 2px lightgray;
+}
 
 .Grades-container{
-	background: green;
+	background: rgba(255, 255, 255, 0.4);
 	width: 80%;
 	height: 100%;
 /*	position: absolute;*/
@@ -529,7 +556,7 @@ justify-content: space-evenly;
 }
 
 .Inbox-container{
-	background: yellow;
+	background: rgba(255, 255, 255, 0.4);
 	width: 80%;
 	height: 100%;
 /*	position: absolute;*/
