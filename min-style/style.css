@@ -302,6 +302,7 @@ justify-content: space-evenly;
 /*	background: red;*/
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10px;
 }
 .schedule span{
 	font-size: 11px;
