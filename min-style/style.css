@@ -214,9 +214,9 @@ justify-content: space-evenly;
 	font-weight: bolder;
 }
 .dashboard-content{
-	width: auto;
+	width: 100%;
 	height: 100%;
-	max-width: 100%;
+/*	max-width: 100%;*/
 	overflow-y: scroll;
 /*	background: lightgray;*/
 /*	position: absolute;*/
@@ -241,7 +241,7 @@ justify-content: space-evenly;
 
 /*left dashboard content*/
 .first-cont{
-	width: 500px;
+	width: 50%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -250,7 +250,7 @@ justify-content: space-evenly;
 	padding-right: 10px;
 }
 .second-cont{
-	width: 500px;
+	width: 50%;
 	height: 100%;
 	background: #f7f7f7;
 	display: flex;
