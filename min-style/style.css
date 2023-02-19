@@ -17,6 +17,12 @@
 	font-family: 'Poppins', sans-serif;
 
 }
+.mother{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
 
 .main-container{
 	width: 100%;
