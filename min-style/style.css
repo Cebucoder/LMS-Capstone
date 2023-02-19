@@ -435,6 +435,13 @@ justify-content: space-evenly;
 	justify-content: space-evenly;
 /*	border-radius: 10px;*/
 }
+.sub-img-cont img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: right;
+	background: pink;
+}
 .subs{
 	width: 230px;
 	height: 130px;
@@ -674,7 +681,7 @@ justify-content: space-evenly;
 }
 .sub-img-cont{
 	width: 100%;
-	height: 140px;
+	height: 120px;
 	background: #0853C4;
 	position: absolute;
 	top: 0;
