@@ -23,14 +23,17 @@
 
 		<div class="sideicon" id="sidebar-icon">
 
-			<div class="icons-list">
+			<div class="icons-list" >
 				<!-- icons -->
-			<li><ion-icon name="options-outline" onclick="dashboard()"></ion-icon></li>
-			<li><ion-icon name="calendar-outline" onclick="calendar()"></ion-icon></li>
-			<li><ion-icon name="people-outline" onclick="people()"></ion-icon></li>
-			<li><ion-icon name="book-outline" onclick="subject()"></ion-icon></li>
-			<li><ion-icon name="bar-chart-outline" onclick="grades()"></ion-icon></li>
-			<li><ion-icon name="mail-outline" onclick="inboxs()"></ion-icon></li>
+				<ul onclick="myFunction(event)">
+					<li class="active" onclick="dashboard()"><ion-icon name="options-outline" ></ion-icon></li>
+					<li onclick="calendar()"><ion-icon name="calendar-outline" ></ion-icon></li>
+					<li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li>
+					<li onclick="subject()"><ion-icon name="book-outline" ></ion-icon></li>
+					<li onclick="grades()"><ion-icon name="bar-chart-outline" ></ion-icon></li>
+					<li onclick="inboxs()"><ion-icon name="mail-outline" ></ion-icon></li>
+				</ul>
+
 			</div>
 
 

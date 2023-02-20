@@ -30,10 +30,11 @@
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 0;
+	top: 15px;
 	left:0;
 	z-index: 2;
 /*	background: red;*/
+	cursor: pointer;
 }
 .menu ion-icon{
 	font-size: 30px;
@@ -119,6 +120,7 @@
 	background: #0853c424;
 	color: #0853C4;
 	transition: .2s;
+	cursor: pointer;
 }
 .icons-list ion-icon{
 	font-size: 20px;
@@ -136,6 +138,7 @@
 }
 .logout li:hover{
 	background: #0853c424;
+	cursor: pointer;
 	
 	color: #0853C4;
 	transition: .2s;
