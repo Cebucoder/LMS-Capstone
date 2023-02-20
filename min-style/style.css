@@ -846,7 +846,6 @@
 .grades-content{
 	width: 100%;
 	height: 100%;
-/*	background: red;*/
 	max-height: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -868,17 +867,14 @@
 }
 .grades-content th{
 	text-align: center;
-/*	border: 1px solid #fff;*/
 	padding: 15px 0;
 	font-size: 14px;
-/*	border-collapse: collapse;*/
 	background: #fff;
 	color: #000;
-/*	font-weight: normal;*/
 }
 .grades-content td{
 	border: 1px solid #fff;
-	padding: 15px 10px;
+	padding: 10px 10px;
 	font-size: 13px;
 	transition: 0s;
 }
@@ -887,6 +883,9 @@
 	color: #000;
 	transition: 0.2s;
 	font-weight: bolder;
+}
+.grades-content dd{
+	padding-left: 10px;
 }
 
 
