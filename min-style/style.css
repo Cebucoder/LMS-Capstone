@@ -912,11 +912,137 @@
 .inbox-content{
 	width: 100%;
 	height: 100%;
-	background: red;
+	display: flex;
+/*	background: red;*/
 	max-height: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
+.inbox-left-content{
+	width: 200px;
+	height: 100%;
+	border-right: 2px solid #fff;
+	display: flex;
+	flex-direction: column;
+	padding-right: 10px;
+}
+.inbox-left-content ul{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.inbox-left-content li{
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+.inbox-left-content li:hover{
+	background: #0853c424;
+	color: #0853C4;
+	transition: .2s;
+}
+.inbox-left-content a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.7);
+	padding-left: 15px;
+	font-size: 14px;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-weight: bolder;
+}
+.inbox-left-content a:hover{
+	color: #0853C4;
+	transition: .2s;
+}
+.inbox-left-content ion-icon{
+	font-size: 20px;
+}
+.message-form{
+	width: auto;
+	height: 100%;
+/*	background: pink;*/
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+.message-form textarea{
+	width: 100%;
+	height: 250px;
+	max-width: 680px;
+	min-width: 680px;
+	min-height: 250px;
+	color: #000;
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px -3px grey;
+	outline-color: #0853c424;
+}
+.message-form span{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: right;
+	justify-content: right;
+	margin-top: 10px;
+}
+.message-form button{
+	width: 200px;
+	height: 50px;
+	background: #fff;
+	border: none;
+	border-radius: 5px;
+}
+.message-form button:hover{
+	background: #0853c424;
+	color: #fff;
+	transition: .2s;
+	border: 2px solid #fff;
+}
+
+
+/*student profile*/
+.Student{
+	background: rgba(255, 255, 255, 0.4);
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.Student label{
+	font-size: 20px;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+.student-content{
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	display: flex;
+/*	flex-direction: column;*/
+	padding-right: 10px;
+
+}
+
+
+.show-student-content{
+	display: flex;
+}
+
+
 @media only screen and (max-width:590px){
 
 }

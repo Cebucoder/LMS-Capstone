@@ -39,7 +39,7 @@
 
 
 			<div class="student-img">
-				<div class="studentprof">
+				<div class="studentprof" onclick="showStudent()">
 					<div class="student">
 					<img src="./images/beluga.jpg" width="45px">
 				</div>
@@ -71,12 +71,12 @@
 			</ul>
  
 			<div class="student-img">
-				<div class="studentprof">
+				<div class="studentprof" onclick="showStudent()">
 					<div class="student">
-					<a href="student-profile.html"><img src="./images/beluga.jpg" width="45px"></a>
+					<img src="./images/beluga.jpg" width="45px">
 				</div>
 				<div class="name">
-					<span class="name-active"><a href="student-profile.html" style="text-decoration: none;color: #0853C4;">Beluga Abellana</a></span>
+					<span class="name-active">Beluga Abellana</span>
 					<span>Student</span>
 				</div>
 				</div>
@@ -85,6 +85,7 @@
 					<a href="login-page.html" style="text-decoration: none;"><button><ion-icon name="log-out-outline"></ion-icon>Logout</button></a>
 				</div>
 			</div>
+
 		</div>
 
 
@@ -1497,9 +1498,38 @@
 		  	<label>Message</label>
 
 			<div class="inbox-content">
-				
+				<div class="inbox-left-content">
+					<ul>
+						<li><ion-icon name="create-outline"></ion-icon><a href="#Message">Message</a></li>
+						<li><ion-icon name="mail-unread-outline"></ion-icon><a href="#Inbox">Inbox</a></li>
+						<li><ion-icon name="send-outline"></ion-icon><a href="#Sent">Sent</a></li>
+						<li><ion-icon name="trash-outline"></ion-icon><a href="#Trash">Trash</a></li>
+					</ul>
+				</div>
+
+				<div class="message-form">
+					<form>
+						<textarea placeholder="Send your school concern here..."></textarea>
+						<span><button>Submit</button></span>
+					</form>
+				</div>
 			</div>
-		  </div>     
+		  </div>   
+
+
+
+		  <!-- Student Profile -->
+		  <div class="Student" id="student-content">
+		  	<label>Student Profile</label>
+		  	<div class="student-content" >
+		  		
+
+
+		  	</div>
+		  	
+		  </div>
+		  <!-- Student Profile -->
+
 
 	</div>
 	</div>
