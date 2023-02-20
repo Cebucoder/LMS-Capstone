@@ -336,15 +336,15 @@
 /*left dashboard content*/
 .sum-lesson{
 	width: 600px;
-	height: 100%;
-	padding-right: 10px;*/
+	height: auto;
+	padding-right: 10px;
+	border-right: 1px solid #fff;
 
 }
 .sum-subject{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: flex-start;
-/*	height: 100%;*/
 }
 .sum-subject .subject:hover{
 	cursor: pointer;
