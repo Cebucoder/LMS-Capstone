@@ -90,3 +90,11 @@ function showAll(event){
   event.target.classList.add("active");
 };
 
+
+let sideicon = document.getElementById("sidebar-icon");
+let sidebar  = document.getElementById("sidebar");
+function menu(){
+	sidebar.classList.toggle("sidebr-close");
+	sideicon.classList.toggle("sideicon-show");
+}
+

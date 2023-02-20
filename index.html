@@ -15,11 +15,45 @@
 	<div class="mother">
 		<!-- main container -->
 	<div class="main-container">
-		<div class="sidebar">
+		<!-- menubar -->
+		<div class="menu" onclick="menu()">
+			<ion-icon name="menu"></ion-icon>
+		</div>
+
+
+		<div class="sideicon" id="sidebar-icon">
+
+			<div class="icons-list">
+				<!-- icons -->
+			<li><ion-icon name="options-outline" onclick="dashboard()"></ion-icon></li>
+			<li><ion-icon name="calendar-outline" onclick="calendar()"></ion-icon></li>
+			<li><ion-icon name="people-outline" onclick="people()"></ion-icon></li>
+			<li><ion-icon name="book-outline" onclick="subject()"></ion-icon></li>
+			<li><ion-icon name="bar-chart-outline" onclick="grades()"></ion-icon></li>
+			<li><ion-icon name="mail-outline" onclick="inboxs()"></ion-icon></li>
+			</div>
+
+
+			<div class="student-img">
+				<div class="studentprof">
+					<div class="student">
+					<img src="./images/Me.jpg" width="45px">
+				</div>
+				</div>
+
+				<div class="logout">
+					<li><ion-icon name="log-out-outline"></ion-icon></li>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- menubar -->
+		<div class="sidebar" id="sidebar">
 			<label>Logo.<span class="me">me</span></label>
 
 			<ul onclick="myFunction(event)">
-				<li class="active" id="options" onclick="dashboard()"><ion-icon name="options-outline" ></ion-icon>Dashboard</li>
+				<li class="active" id="options" onclick="dashboard()"><ion-icon  name="options-outline" ></ion-icon>Dashboard</li>
 
 				<li class="" id="calendar" onclick="calendar()"><ion-icon name="calendar-outline"></ion-icon >Incoming lessons</li>
 
@@ -68,7 +102,7 @@
 		  		<label>Incoming lessons</label>
 					<div class="btn">
 						<!-- <button>Show all</button> -->
-						<button><ion-icon name="ellipsis-vertical-outline"></ion-icon></button>
+						<button title="Options"><ion-icon name="ellipsis-vertical-outline" ></ion-icon></button>
 					</div>
 			</div>
 
@@ -660,6 +694,7 @@
 									<small>Teacher: Edmon Maniago</small>
 								</div>
 								<div class="tools">
+									<title>Tools</title>
 									<ion-icon name = "ellipsis-vertical"></ion-icon>
 								</div>
 							</div>

@@ -23,6 +23,21 @@
 	align-items: center;
 	margin: auto;
 }
+.menu{
+	width: 75px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 2;
+/*	background: red;*/
+}
+.menu ion-icon{
+	font-size: 30px;
+}
 
 .main-container{
 	width: 100%;
@@ -54,6 +69,76 @@
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	border-right: 1px solid rgba(255, 255, 255, 0.9);
+	transition: 0.3s;
+	opacity: 1;
+
+}
+.sidebr-close{
+	left:-100%;
+	position: fixed;
+	opacity: 0;
+}
+
+/*side bar icon*/
+.sideicon{
+	width: 80px;
+	height: 100%;
+/*	background: pink;*/
+	display: flex;
+	flex-direction: column;
+	padding-top: 105px;
+	justify-content: space-between;
+/*	left: -100%;*/
+	display: none;
+	opacity: 0;
+	transition: 0.3;
+}
+.sideicon-show{
+	display: flex;
+	opacity: 1;
+}
+.icons-list{
+	width: 80px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.icons-list li{
+	width: 50px;
+	height: 50px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .2s;
+	border-radius: 5px;
+
+}
+.icons-list li:hover{
+	background: #0853c424;
+	color: #0853C4;
+	transition: .2s;
+}
+.icons-list ion-icon{
+	font-size: 20px;
+}
+.logout li{
+	width: 50px;
+	height: 50px;
+	transition: .2s;
+	border-radius: 5px;
+	font-size: 20px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logout li:hover{
+	background: #0853c424;
+	
+	color: #0853C4;
+	transition: .2s;
 
 }
 
