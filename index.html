@@ -26,12 +26,12 @@
 			<div class="icons-list" >
 				<!-- icons -->
 				<ul onclick="myFunction(event)">
-					<li class="active" onclick="dashboard()"><ion-icon name="options-outline" ></ion-icon></li>
-					<li onclick="calendar()" ><ion-icon name="calendar-outline" ></ion-icon></li>
-					<li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li>
-					<li onclick="subject()"><ion-icon name="book-outline" ></ion-icon></li>
-					<li onclick="grades()"><ion-icon name="bar-chart-outline" ></ion-icon></li>
-					<li onclick="inboxs()"><ion-icon name="mail-outline" ></ion-icon></li>
+					<a href="#Dashboard"><li class="active" onclick="dashboard()"><ion-icon name="options-outline" ></ion-icon></li></a>
+					<a href="#Lessons"><li onclick="calendar()" ><ion-icon name="calendar-outline" ></ion-icon></li></a>
+					<a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a>
+					<a href="#Subjects"><li onclick="subject()"><ion-icon name="book-outline" ></ion-icon></li></a>
+					<a href="#Grades"><li onclick="grades()"><ion-icon name="bar-chart-outline" ></ion-icon></li></a>
+					<a href="#Message"><li onclick="inboxs()"><ion-icon name="mail-outline" ></ion-icon></li></a>
 
 				</ul>
 
@@ -40,9 +40,9 @@
 
 			<div class="student-img">
 				<div class="studentprof" onclick="showStudent()">
-					<div class="student">
+					<a href="#Student-Profile"><div class="student">
 					<img src="./images/beluga.jpg" width="45px">
-				</div>
+					</div></a>
 				</div>
 
 				<div class="logout">
@@ -57,21 +57,22 @@
 			<label>Logo.<span class="me">me</span></label>
 
 			<ul onclick="myFunction(event)">
-				<li class="active" id="options" onclick="dashboard()"><ion-icon  name="options-outline" ></ion-icon>Dashboard</li>
+				<a href="#Dashboard"><li class="active" id="options" onclick="dashboard()"><ion-icon  name="options-outline" ></ion-icon>Dashboard</li></a>
 
-				<li class="" id="calendar" onclick="calendar()"><ion-icon name="calendar-outline"></ion-icon >Incoming lessons</li>
+				<a href="#Lessons"><li class="" id="calendar" onclick="calendar()"><ion-icon name="calendar-outline"></ion-icon >Incoming lessons</li></a>
 
-				<li class="" id="people" onclick="people()"><ion-icon name="people-outline"></ion-icon >People</li>
+				<a href="#Student"><li class="" id="people" onclick="people()"><ion-icon name="people-outline"></ion-icon >People</li></a>
 
-				<li class="" id="subject" onclick="subject()"><ion-icon name="book-outline"></ion-icon >Subjects</li>
+				<a href="#Subjects"><li class="" id="subject" onclick="subject()"><ion-icon name="book-outline"></ion-icon >Subjects</li></a>
 
-				<li class="" id="grades" onclick="grades()"><ion-icon name="bar-chart-outline"></ion-icon >Grades</li>
+				<a href="#Grades"><li class="" id="grades" onclick="grades()"><ion-icon name="bar-chart-outline"></ion-icon >Grades</li></a>
 
-				<li class="" id="inbox" onclick="inboxs()"><ion-icon name="mail-outline"></ion-icon >Message us</li>
+				<a href="#Message"><li class="" id="inbox" onclick="inboxs()"><ion-icon name="mail-outline"></ion-icon >Message us</li></a>
 			</ul>
  
 			<div class="student-img">
-				<div class="studentprof" onclick="showStudent()">
+				<a href="#Student-Profile">
+					<div class="studentprof" onclick="showStudent()">
 					<div class="student">
 					<img src="./images/beluga.jpg" width="45px">
 				</div>
@@ -80,6 +81,7 @@
 					<span>Student</span>
 				</div>
 				</div>
+				</a>
 
 				<div class="logout">
 					<a href="login-page.html" style="text-decoration: none;"><button><ion-icon name="log-out-outline"></ion-icon>Logout</button></a>
@@ -1509,8 +1511,8 @@
 
 				<div class="message-form">
 					<form>
-						<textarea placeholder="Send your school concern here..."></textarea>
-						<span><button>Submit</button></span>
+						<textarea placeholder="Send your school concern here..." required></textarea>
+						<span><button type="submit">Submit</button></span>
 					</form>
 				</div>
 			</div>

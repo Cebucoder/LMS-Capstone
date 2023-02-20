@@ -121,6 +121,10 @@
 	color: rgba(0, 0, 0, 0.7);
 
 }
+.icons-list a{
+	width: 100%;
+	height: 100%;
+}
 .icons-list li:hover{
 	background: #0853c424;
 	color: #0853C4;
@@ -191,6 +195,9 @@
 	background: #0853c424;
 	color: #0853C4;
 	transition: .2s;
+}
+.sidebar a{
+	text-decoration: none;
 }
 .sidebar .active{
 	border-left: 3px solid #0853C4;
@@ -963,6 +970,7 @@
 	transition: .2s;
 }
 .inbox-left-content ion-icon{
+	color: rgba(0, 0, 0, 0.7);
 	font-size: 20px;
 }
 .message-form{
@@ -1001,6 +1009,8 @@
 	background: #fff;
 	border: none;
 	border-radius: 5px;
+	font-weight: bolder;
+	color: rgba(0, 0, 0, 0.7);
 }
 .message-form button:hover{
 	background: #0853c424;
