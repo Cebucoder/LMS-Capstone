@@ -317,7 +317,7 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	display: flex;
-	flex-direction: column;
+/*	flex-wrap: wrap;*/
 	padding-right: 10px;
 }
 /* width*/
@@ -357,6 +357,17 @@
 .sum-subject .subject-banner{
 	background: rgba(0, 0, 0, 0.7);
 	z-index: 1;
+}
+
+
+
+
+/*Dashboard right content*/
+.right-content{
+	width: auto;
+	padding: 10px;
+	height: auto;
+	background: red;
 }
 
 
@@ -835,16 +846,47 @@
 .grades-content{
 	width: 100%;
 	height: 100%;
-	background: red;
+/*	background: red;*/
 	max-height: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
+
 }
 
 .show-Grades-container{
 	display: flex;
 }
+.grades-content table{
+	width: 100%;
+/*	height: 100%;*/
+	border: 2px solid #fff;
+	background: #0853c424;
 
+}
+.grades-content tr{
+	border: 1px solid #fff;
+}
+.grades-content th{
+	text-align: center;
+/*	border: 1px solid #fff;*/
+	padding: 15px 0;
+	font-size: 14px;
+/*	border-collapse: collapse;*/
+	background: #fff;
+	color: #000;
+/*	font-weight: normal;*/
+}
+.grades-content td{
+	border: 1px solid #fff;
+	padding: 15px 10px;
+	font-size: 13px;
+	transition: 0s;
+}
+.grades-content td:hover{
+	background: #fff;
+	color: #000;
+	transition: 0.3s;
+}
 
 
 
