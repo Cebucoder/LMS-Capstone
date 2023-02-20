@@ -105,6 +105,10 @@
 	flex-direction: column;
 	align-items: center;
 }
+.icons-list .active{
+	background: #0853c424;
+	color: #0853C4;
+}
 .icons-list li{
 	width: 50px;
 	height: 50px;
@@ -114,6 +118,7 @@
 	justify-content: center;
 	transition: .2s;
 	border-radius: 5px;
+	color: rgba(0, 0, 0, 0.7);
 
 }
 .icons-list li:hover{
@@ -351,6 +356,7 @@
 }
 .sum-subject .subject-banner{
 	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
 }
 
 

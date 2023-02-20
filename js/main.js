@@ -10,14 +10,30 @@ let inbox  = document.querySelector("#Inbox-container");
 
 // ================================================================
 // adding and removing active to li
+// myFunction = function(event) {
+//   // reset all menu items
+//   document.querySelectorAll(".active").forEach(function(item) {
+//   item.classList.remove('active');
+// })
+//   // mark as active selected menu item
+//   event.target.classList.add("active");
+// };
+
 myFunction = function(event) {
   // reset all menu items
-  document.querySelectorAll('li.active').forEach(function(item) {
-  item.classList.remove('active');
-})
+  document.querySelectorAll(".active").forEach(function(item) {
+    item.classList.remove('active');
+  });
   // mark as active selected menu item
-  event.target.classList.add("active");
+  if (event.target.nodeName === 'LI') {
+    event.target.classList.add("active");
+  } else if (event.target.nodeName === 'I') {
+    event.target.parentNode.classList.add("active");
+    // event.stopPropagation(); // prevent the event from bubbling up
+  }
 };
+
+
 // ================================================================
 
 
