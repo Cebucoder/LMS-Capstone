@@ -885,7 +885,8 @@
 .grades-content td:hover{
 	background: #fff;
 	color: #000;
-	transition: 0.3s;
+	transition: 0.2s;
+	font-weight: bolder;
 }
 
 
