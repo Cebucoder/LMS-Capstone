@@ -79,16 +79,16 @@ function inboxs() {
 
 // show all function from subject
 
-function showAll(event){
+function showAll(){
 	dash.classList.add("hide-dashboard");
 	schedule.classList.add("show-incoming-lesson");
-
 	document.querySelectorAll('li.active').forEach(function(item) {
-  	item.classList.remove('active');
+  item.classList.remove('active');
 })
   // mark as active selected menu item
   event.target.classList.add("active");
 };
+
 
 
 let sideicon = document.getElementById("sidebar-icon");
