@@ -392,11 +392,47 @@
 
 /*Dashboard right content*/
 .right-content{
-	width: auto;
+	width: 100%;
+	max-width: 350px;
 	padding: 10px;
 	height: auto;
-	background: red;
+/*	background: red;*/
+	display: flex;
+	flex-direction: column;
 }
+.event{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+.event label{
+	font-size: 18px;
+	font-weight: normal !important;
+/*	padding: 20px 0;*/
+}
+.activites-cont{
+	width: 100%;
+	height: 200px;
+/*	background: pink;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #0853c424;
+	border: 1px solid lightgray;
+}
+.activites-cont ion-icon{
+	font-size: 60px;
+	transform: rotate(-45deg);
+}
+.activites-cont label{
+	font-size: 20px;
+	padding: 10px;
+}
+
+
 
 
 
