@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="icon" type="icon/img" href="./images/logo.png">
-	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" type="text/css" href="./min-style/style.css">
 	<title>LMS</title>
 </head>
@@ -40,9 +40,9 @@
 
 			<div class="student-img">
 				<div class="studentprof" onclick="showStudent()">
-					<a href="#Student-Profile"><div class="student">
+					<div class="student">
 					<img src="./images/beluga.jpg" width="45px">
-					</div></a>
+					</div>
 				</div>
 
 				<div class="logout">
@@ -54,7 +54,11 @@
 
 		<!-- menubar -->
 		<div class="sidebar" id="sidebar">
-			<label>Logo.<span class="me">me</span></label>
+				<div class="logo">
+					<div class="logo-cont">
+					<img src="https://static.wixstatic.com/media/61bf60_f2f5025fdcbe433c99b03950aeb0f71f~mv2.png" width="40px">
+					</div>
+				</div>
 
 			<ul onclick="myFunction(event)">
 				<a href="#Dashboard"><li class="active" id="options" onclick="dashboard()"><ion-icon  name="options-outline" ></ion-icon>Dashboard</li></a>
@@ -71,7 +75,7 @@
 			</ul>
  
 			<div class="student-img">
-				<a href="#Student-Profile">
+				<a href="#Student-Profile1">
 					<div class="studentprof" onclick="showStudent()">
 					<div class="student">
 					<img src="./images/beluga.jpg" width="45px">
@@ -680,7 +684,7 @@
 		  		<!-- student 1 -->
 		  		<div class="peoplecont">
 		  			<div class="profile-img-name">
-		  				<div class="img-profile">
+		  				<div class="img-profile" onclick="showStudent()">
 		  					<img src="./images/profile-icon.png" width="55px">
 		  				</div>
 		  				<label>Juan Dela Cruz</label>
@@ -1501,7 +1505,7 @@
 
 			<div class="inbox-content">
 				<div class="inbox-left-content">
-					<ul>
+					<ul >
 						<li onclick="Message()"><ion-icon name="create-outline"></ion-icon><a href="#Message">Message</a></li>
 						<li onclick="Inbox()"><ion-icon name="mail-unread-outline"></ion-icon><a href="#Inbox">Inbox</a></li>
 						<li onclick="Sent()"><ion-icon name="send-outline"></ion-icon><a href="#Sent">Sent</a></li>

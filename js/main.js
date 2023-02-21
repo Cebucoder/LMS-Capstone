@@ -151,7 +151,7 @@ let sent = document.getElementById("Sent-form");
 let trash = document.getElementById("Trash-form");
 
 function Message(){
-	compose.classList.remove("hide-compose");
+	compose.classList.remove("hide-compose","inbox-left-content-active");
 	message.classList.remove("show-inbox");
 	sent.classList.remove("show-sent");
 	trash.classList.remove("show-trash");
