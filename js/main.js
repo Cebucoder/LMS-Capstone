@@ -148,31 +148,32 @@ function menu(){
 let compose = document.getElementById("message-from");
 let message = document.getElementById("Inbox-from");
 let sent = document.getElementById("Sent-form");
-// let trash = document.getElementById("trash-form");
+let trash = document.getElementById("Trash-form");
 
 function Message(){
 	compose.classList.remove("hide-compose");
 	message.classList.remove("show-inbox");
 	sent.classList.remove("show-sent");
-	// trash.classList.remove("show-trash");
+	trash.classList.remove("show-trash");
 
 }
 function Inbox(){
 	compose.classList.add("hide-compose");
 	message.classList.add("show-inbox");
 	sent.classList.remove("show-sent");
-	// trash.classList.remove("show-trash");
+	trash.classList.remove("show-trash");
 }
 function Sent(){
 	compose.classList.add("hide-compose");
 	message.classList.remove("show-inbox");
 	sent.classList.add("show-sent");
-	// trash.classList.remove("show-trash");
+	trash.classList.remove("show-trash");
 }
-// function Trash(){
-// 	compose.classList.remove("show-compose");
-// 	message.classList.remove("show-inbox");
-// 	sent.classList.remove("show-sent");
-// 	trash.classList.add("show-trash");
-// }
+function Trash(){
+	compose.classList.add("hide-compose");
+	message.classList.remove("show-inbox");
+	sent.classList.remove("show-sent");
+	trash.classList.add("show-trash");
+}
+
 

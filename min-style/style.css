@@ -1139,6 +1139,51 @@
 }
 
 
+/*Trash messages*/
+.Trash-form{
+	width: auto;
+	height: 100%;
+/*	background: pink;*/
+/*	max-height: 100%;*/
+	/*overflow-y: scroll;
+	overflow-x: hidden;*/
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	display: none;
+}
+.trash-message{
+	width: 600px;
+	height: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px -3px grey;
+	outline-color: #0853c424;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	justify-content: center;
+	color: rgba(0, 0, 0, 0.7);
+	margin: 4px;
+}
+.no-trash{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #0853c424;
+}
+.no-trash ion-icon{
+	font-size: 50px;
+}
+.show-trash{
+	display: flex;
+}
+
+
+
 /*student profile*/
 .Student{
 	background: rgba(255, 255, 255, 0.4);
