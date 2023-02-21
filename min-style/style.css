@@ -1206,10 +1206,60 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	display: flex;
-/*	flex-direction: column;*/
+	flex-direction: column;
+	align-items: center;
 	padding-right: 10px;
-
 }
+.student-profile-img{
+	width: auto;
+	height: auto;
+	border-radius: 50%;
+	overflow:hidden;
+	background: #fff;
+	border: 3px solid #fff;
+}
+.student-profile-details{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	border: 2px solid #fff;
+	background: #0853c424;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+.student-profile-details table{
+	width: 100%;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.student-profile-details td{
+	border: 1px solid #0853c424;
+	padding: 10px 10px;
+	font-size: 13px;
+	transition: 0s;
+}
+.student-profile-details td:hover{
+	background: #fff;
+	color: #000;
+	transition: 0.2s;
+	font-weight: bolder;
+}
+.report-student{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	text-align: right;
+	align-items: center;
+}
+.report-student a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.7);
+}
+.report-student a:hover{
+	text-decoration: underline;
+	color: #0853C4;
+}
+
 
 
 .show-student-content{
