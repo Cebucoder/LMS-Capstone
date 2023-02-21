@@ -973,6 +973,8 @@
 	color: rgba(0, 0, 0, 0.7);
 	font-size: 20px;
 }
+
+/*message from*/
 .message-form{
 	width: auto;
 	height: 100%;
@@ -981,6 +983,11 @@
 	display: flex;
 	flex-direction: column;
 	padding: 30px;
+/*	display: none;*/
+}
+/*display message*/
+.hide-compose{
+	display: none;
 }
 .message-form textarea{
 	width: 100%;
@@ -1017,6 +1024,118 @@
 	color: #fff;
 	transition: .2s;
 	border: 2px solid #fff;
+}
+
+
+
+/*inbox form*/
+.Inbox-form{
+	width: auto;
+	height: 100%;
+/*	background: pink;*/
+/*	max-height: 100%;*/
+	/*overflow-y: scroll;
+	overflow-x: hidden;*/
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	display: none;
+}
+.inbox-message{
+	width: 600px;
+	height: 60px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px -3px grey;
+	outline-color: #0853c424;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	justify-content: space-between;
+	color: rgba(0, 0, 0, 0.7);
+	margin: 5px;
+}
+.admin{
+	height: 60px;
+	width: 60px;
+/*	background: pink;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.admin-message{
+	width:100%;
+	height: auto;
+	padding-left: 15px;
+}
+.remove-message{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.remove-message ion-icon{
+	font-size: 20px;
+}
+/*display inbox*/
+.show-inbox{
+	display: flex;
+}
+
+/*sent message*/
+.Sent-form{
+	width: auto;
+	height: 100%;
+/*	background: pink;*/
+/*	max-height: 100%;*/
+	/*overflow-y: scroll;
+	overflow-x: hidden;*/
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	display: none;
+}
+.show-sent{
+	display: flex;
+}
+.sent-message{
+	width: 600px;
+	height: 60px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px -3px grey;
+	outline-color: #0853c424;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	justify-content: space-between;
+	color: rgba(0, 0, 0, 0.7);
+	margin: 4px;
+}
+.sender{
+	height: 60px;
+	width: 60px;
+/*	background: pink;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	overflow-x: hidden;
+}
+.sender img{
+	border-radius: 50%;
+}
+.sender-message{
+	width:100%;
+	height: auto;
+	padding-left: 15px;
 }
 
 
