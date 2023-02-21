@@ -392,8 +392,7 @@
 
 /*Dashboard right content*/
 .right-content{
-	width: 100%;
-	max-width: 350px;
+	width: 350px;
 	padding: 10px;
 	height: auto;
 /*	background: red;*/
@@ -432,7 +431,56 @@
 	padding: 10px;
 }
 
-
+/*calendar*/
+.sum-calendar{
+	width: 100%;
+/*	padding: 10px;*/
+	height: 200px;
+	background: #fff;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+}
+.this-day{
+	width: 100%;
+	height: 50px;
+	background: #0853C4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: bolder;
+}
+.sum-calendar label{
+	color: #0853C4;
+	font-weight: bolder;
+	font-size: 60px;
+	width: 100%;
+	height: 60px;
+/*	padding-top: 10px;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+/*	background: pink;*/
+}
+.sum-calendar small{
+	color: #0853C4;
+}
+.thisyear{
+	width: 100%;
+	height: 50px;
+	background: #0853C4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: bolder;
+}
 
 
 
