@@ -1395,6 +1395,12 @@
 		width: 100%;
 		padding: 0;
 	}
+	.Student{
+		padding: 10px;
+	}
+	.Student label{
+		display: none;
+	}
 }
 @media only screen and (max-width:589px){
 	.sideicon{
