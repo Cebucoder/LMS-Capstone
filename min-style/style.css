@@ -352,6 +352,7 @@
 /* width*/
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 
 /* Track */
@@ -1633,6 +1634,13 @@
 	.sum-subject .subject{
 		width: 100%;
 	}
+	.grades-content th{
+    padding: 15px 56px;
+    font-size: 9px;
+    background: #fff;
+    color: #000;
+    font-weight: normal;
+	}
 }
 
 @media only screen and (max-width:846px){
@@ -1640,6 +1648,12 @@
 		display: none;
 	}
 	.people-header .course{
+		display: none;
+	}
+	.grades-content .techer{
+		display: none!important;
+	}
+	.grades-content .colspan-6{
 		display: none;
 	}
 }
