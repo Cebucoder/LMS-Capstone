@@ -1623,6 +1623,10 @@
 		padding-bottom: 150px;
 		padding-top: 20px;
 	}
+	.student-content{
+		justify-content: flex-start;
+		padding-top: 20px;
+	}
 }
 
 @media only screen and (max-width:746px){
