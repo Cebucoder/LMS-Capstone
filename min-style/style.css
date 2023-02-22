@@ -1619,6 +1619,7 @@
 		overflow-x: scroll;
 		width: 100%;
 		padding: 10px;
+		padding-bottom: 50px;
 	}
 	.Subject-container{
 		padding-bottom: 150px;
