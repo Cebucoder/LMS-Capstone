@@ -150,7 +150,7 @@
 .upcomming span{
 	width: 100%;
 	font-size: 14px;
-	color: #0853C4;
+	color: #465CAC;
 	text-align: right;
 	cursor: pointer;
 }
@@ -216,7 +216,7 @@
 	height: 38px;
 	border-radius: 50%;
 	overflow: hidden;
-	background: #0495DD;
+	background: #465CAC;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -237,7 +237,7 @@
 	font-weight: bolder;
 }
 .announcement-list span:hover{
-	color: #0495DD;
+	color: #465CAC;
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -253,8 +253,8 @@
 	background: #fff;
 }
 .tools:hover{
-	background: #0495dd4f;
-	color: grey;
+	background: #465cac80;
+	color: #fff;
 }
 
 .tools-content{

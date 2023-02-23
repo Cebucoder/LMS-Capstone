@@ -150,7 +150,7 @@
 .upcomming span{
 	width: 100%;
 	font-size: 14px;
-	color: #0853C4;
+	color: #F3C324;
 	text-align: right;
 	cursor: pointer;
 }
@@ -216,7 +216,7 @@
 	height: 38px;
 	border-radius: 50%;
 	overflow: hidden;
-	background: #0495DD;
+	background: #F3C324;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -237,7 +237,7 @@
 	font-weight: bolder;
 }
 .announcement-list span:hover{
-	color: #0495DD;
+	color: #F3C324;
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -253,7 +253,7 @@
 	background: #fff;
 }
 .tools:hover{
-	background: #0495dd4f;
+	background: #EEEFBE;
 	color: grey;
 }
 
@@ -283,7 +283,7 @@
 	top: 40px;
 }
 .tool-back{
-	background: #0495dd4f;
+	background: #EEEFBE;
 	color: grey;
 }
 .tools-content small{
@@ -296,7 +296,7 @@
 }
 .tools-content small:hover{
 	text-decoration: underline;
-	text-decoration-color: #0495DD;
+	text-decoration-color: #F3C324;
 }
 
 
