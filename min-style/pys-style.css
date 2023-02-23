@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+.maincontainer{
+	width: 100%;
+	height: 100vh;
+	padding-top: 90px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #fff;
+/*	background: rgba(255, 255, 255, 0.4);*/
+}
+.stream-cont{
+	width: 700px;
+	height: auto;
+	background: #fff;
+	margin: auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.header-container{
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	border-bottom: 2px solid #0853c424;;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.head-navlink{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.head-navlink li{
+	list-style: none;
+	padding: 19px 10px;
+	margin: 0 5px;
+	position: relative;
+}
+.head-navlink a{
+	padding: 20px;
+}
+.head-navlink a:hover{
+	color: #0853C4;
+}
+.head-navlink li::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 3px;
+	background: #0853C4;
+}
+.head-navlink a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.head-navlink li:hover::after{
+	width: 100%;
+	color: #0853C4;
+}
+.sub-cont{
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.sub-banner{
+	width: 100%;
+	height: 150px;
+
+}
+.sub-banner img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.subject-label{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+/*	z-index: 1;*/
+
+}
+.subject-label h1{
+	font-size: 25px;
+	padding-bottom: 30px;
+}
+
+.announce-content{
+	width: 100%;
+	height: 100%;
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.upcomming{
+	width: 200px;
+	height: auto;
+	min-height: 150px;
+	max-height: 150px;
+	background: #fff;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+}
+.upcomming label{
+	color: rgba(0, 0, 0, 0.8);
+}
+.upcomming small{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	text-align: center;
+
+}
+.upcomming span{
+	width: 100%;
+	font-size: 14px;
+	color: #0853C4;
+	text-align: right;
+	cursor: pointer;
+}
+.upcomming span:hover{
+	text-decoration: underline;
+}
+
+.announcement{
+	width: 100%;
+	max-width: 480px;
+	height: auto;
+/*	background: pink;*/
+	display: flex;
+	flex-direction: column;
+}
+.send-message{
+	width: 100%;
+	height: 55px;
+	background: #fff;
+	border:1px solid lightgray;
+	border-radius: 7px;
+	box-shadow: 2px 2px 6px -3px lightgray;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+
+}
+.user-icon{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user-icon img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.send-message span{
+	font-size: 11px;
+	color: rgba(0, 0, 0, 0.5);
+	padding-left: 20px;
+	padding-right: 80px;
+}
+
+.announcement-list{
+	width: 100%;
+	height: 55px;
+	background: #fff;
+	border:1px solid lightgray;
+	border-radius: 7px;
+	box-shadow: 2px 2px 6px -3px lightgray;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15px;
+	margin: 8px 0;
+	position: relative;
+}
+.task-icon{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: #0495DD;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.task-icon ion-icon{
+	font-size: 22px;
+	color: #fff;
+}
+.announcement-list span{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.8);
+	padding-left: 20px;
+	width: auto;
+	position: absolute;
+	left: 60px;
+	display: flex;
+	flex-direction: column;
+	font-weight: bolder;
+}
+.announcement-list span:hover{
+	color: #0495DD;
+	text-decoration: underline;
+}
+.tools{
+	width: 38px;
+	height: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: rgba(0, 0, 0, 0.8);
+	position: relative;
+	background: #fff;
+}
+.tools:hover{
+	background: #0495dd4f;
+	color: grey;
+}
+
+.tools-content{
+	width: 120px;
+	height: 80px;
+	border: 1px solid lightgray;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: #fff;
+	box-shadow: 2px 2px 6px -3px lightgray;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px;
+	display: none;
+	transition: 0.3px;
+	opacity: 0;
+	z-index: 1;
+}
+.show-toolsPup{
+	display: flex;
+	opacity: 1;
+	top: 40px;
+}
+.tool-back{
+	background: #0495dd4f;
+	color: grey;
+}
+.tools-content small{
+	width: 100%;
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	cursor: pointer;
+	padding-bottom: 2px;
+}
+.tools-content small:hover{
+	text-decoration: underline;
+	text-decoration-color: #0495DD;
+}
+
+
+@media only screen and (max-width: 445px){
+
+	.announcement-list span{
+		width: 100%;
+		max-width:200px;
+		overflow:hidden;
+		display:inline-block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		padding-left: 5px;
+	}
+	.send-message span{
+		width: 100%;
+		max-width:200px;
+		overflow:hidden;
+		display:inline-block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		padding-right: 0;
+		padding-left: 10px;
+	}
+	.head-navlink li a{
+		padding: 19px 0px;
+		margin: 0 2px;
+/*		background: pink;*/
+		font-size: 12px;
+	}
+	.head-navlink a{
+		padding: 20px 0px;
+	}
+}
+
+
+@media only screen and (max-width: 479px){
+
+	.subject-label h1{
+		font-size: 20px;
+		transition: 0.6s;
+	}
+	.announcement-list span{
+		width: 280px;
+		overflow:hidden;
+		display:inline-block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.main-container{
+		width: 100%;
+	}
+	.header-container{
+		padding: 15px;
+	}
+	.head-navlink li a{
+		font-size: 12px;
+	}
+}
+
+
+@media only screen and (max-width: 538px){
+	.stream-cont{
+		width: 500px;
+		max-width: 100%;
+	}
+	.main-container{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:737px){
+	.stream-cont{
+		transition: 0.6s;
+		width: 500px;
+	}
+	.upcomming{
+		display: none;
+		transition: 0.6s;
+		opacity: 0;
+	}
+	.announcement{
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
