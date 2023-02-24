@@ -149,12 +149,14 @@ let compose = document.getElementById("message-from");
 let message = document.getElementById("Inbox-from");
 let sent = document.getElementById("Sent-form");
 let trash = document.getElementById("Trash-form");
+let label  = document.getElementById("changeMePlease").innerHTML;
 
 function Message(){
 	compose.classList.remove("hide-compose","inbox-left-content-active");
 	message.classList.remove("show-inbox");
 	sent.classList.remove("show-sent");
 	trash.classList.remove("show-trash");
+	document.getElementById("changeMePlease").innerHTML = "Message";
 
 }
 function Inbox(){
@@ -162,18 +164,24 @@ function Inbox(){
 	message.classList.add("show-inbox");
 	sent.classList.remove("show-sent");
 	trash.classList.remove("show-trash");
+	document.getElementById("changeMePlease").innerHTML = "Inbox";
+
 }
 function Sent(){
 	compose.classList.add("hide-compose");
 	message.classList.remove("show-inbox");
 	sent.classList.add("show-sent");
 	trash.classList.remove("show-trash");
+	document.getElementById("changeMePlease").innerHTML = "Sent";
+
 }
 function Trash(){
 	compose.classList.add("hide-compose");
 	message.classList.remove("show-inbox");
 	sent.classList.remove("show-sent");
 	trash.classList.add("show-trash");
+	document.getElementById("changeMePlease").innerHTML = "Trash";
+
 }
 
 
