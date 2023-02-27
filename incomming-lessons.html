@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" type="icon/img" href="./images/owl.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="./min-style/style.css">
+	<title>LMS</title>
+
+	<style type="text/css">
+		.incoming-lesson-container{
+			display: flex;
+		}
+	</style>
+
+</head>
+<body>
+
+
+	<div class="mother">
+		<!-- main container -->
+	<div class="main-container">
+		<!-- menubar -->
+		<div class="menu" onclick="menu()">
+			<ion-icon name="menu"></ion-icon>
+		</div>
+
+
+		<div class="sideicon" id="sidebar-icon">
+
+			<div class="icons-list" >
+				<!-- icons -->
+				<ul >
+					<a href="index.html"><li ><ion-icon name="options-outline" ></ion-icon></li></a>
+					<a href="incoming-lessons.html" ><li class="active"><ion-icon name="calendar-outline" ></ion-icon></li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="Subject.html"><li ><ion-icon name="book-outline" ></ion-icon></li></a>
+					<a href="Grades.html"><li ><ion-icon name="bar-chart-outline" ></ion-icon></li></a>
+					<a href="Message.html"><li ><ion-icon name="mail-outline" ></ion-icon></li></a>
+
+				</ul>
+
+			</div>
+
+
+			<div class="student-img">
+				<div class="studentprof" onclick="showStudent()">
+					<div class="student">
+					<img src="./images/beluga.jpg" width="45px">
+					</div>
+				</div>
+
+				<div class="logout">
+					<li><ion-icon name="log-out-outline"></ion-icon></li>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- menubar -->
+		<div class="sidebar" id="sidebar">
+				<div class="logo">
+					<div class="logo-cont">
+					<img src="https://static.wixstatic.com/media/61bf60_f2f5025fdcbe433c99b03950aeb0f71f~mv2.png" width="40px">
+					</div>
+				</div>
+
+				<ul >
+					<a href="index.html"><li><ion-icon name="options-outline" ></ion-icon>Dashboard</li></a>
+					<a href="incoming-lessons.html" ><li class="active"><ion-icon name="calendar-outline" ></ion-icon>Incoming lesson</li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="Subject.html"><li ><ion-icon name="book-outline" ></ion-icon>Subject</li></a>
+					<a href="Grades.html"><li ><ion-icon name="bar-chart-outline" ></ion-icon>Grades</li></a>
+					<a href="Message.html"><li ><ion-icon name="mail-outline" ></ion-icon>Message</li></a>
+
+				</ul>
+ 
+			<div class="student-img">
+				<a href="#Student-Profile1">
+					<div class="studentprof" onclick="showStudent()">
+					<div class="student">
+					<img src="./images/beluga.jpg" width="45px">
+
+				</div>
+				<div class="name">
+					<span class="name-active">Beluga Abellana</span>
+					<span>Student</span>
+				</div>
+				</div>
+				</a>
+
+				<div class="logout">
+					<a href="login-page.html" style="text-decoration: none;"><button><ion-icon name="log-out-outline"></ion-icon>Logout</button></a>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<!-- Incoming Lessons -->
+		<div class="incoming-lesson-container" id="incoming-lesson-container">
+
+		  	<div class="lesson-header">
+		  		<label>Incoming lessons</label>
+					<div class="btn">
+						<!-- <button>Show all</button> -->
+						<button title="Options"><ion-icon name="ellipsis-vertical-outline" ></ion-icon></button>
+					</div>
+			</div>
+
+			<!-- incoming lesson -->
+			<div class="incoming-lessons">
+
+				<!-- start of schedule -->
+				<div class="schedule">
+					<span><small>Monday</small></span>
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- end of sscedule -->
+
+				<!-- start of schedule -->
+				<div class="schedule">
+					<span><small>Thuesday</small></span>
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- end of sscedule -->
+
+				<!-- start of schedule -->
+				<div class="schedule">
+					<span><small>Wednesday</small></span>
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+					<!-- first schedule -->
+					<div class="zoom-link">
+						<div class="sched-time-cont">
+							<div class="calendar-icon">
+								<ion-icon name="calendar-outline"></ion-icon>
+							</div>
+							<div class="time-teacher">
+								<span class="time">2:00 PM - 3:30 PM</span>
+								<span class="teacher">Edmon</span>
+							</div>
+						</div>
+
+						<!-- lesson chapter -->
+						<div class="lesson-cont">
+							<span></span><small>Lesson 1</small>
+						</div>
+
+						<div class="class-method">
+							<small>Online classes</small>
+							<a href="https://us05web.zoom.us/j/2970996766?pwd=Z1J1RVlHTWptTjBuN0d1VW95NER6Zz09" target="_blank">Zoom</a>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- end of sscedule -->
+
+			</div>
+		</div>
+		  	
+	  	</div>
+</div>
+
+
+</body>
+
+<!-- ion icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>
+
+												
+
+

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" type="icon/img" href="./images/owl.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="./min-style/style.css">
+	<title>LMS</title>
+
+	<style type="text/css">
+		.Grades-container{
+			display: flex;
+		}
+	</style>
+
+</head>
+<body>
+
+
+	<div class="mother">
+		<!-- main container -->
+	<div class="main-container">
+		<!-- menubar -->
+		<div class="menu" onclick="menu()">
+			<ion-icon name="menu"></ion-icon>
+		</div>
+
+
+		<div class="sideicon" id="sidebar-icon">
+
+			<div class="icons-list" >
+				<!-- icons -->
+				<ul >
+					<a href="index.html"><li ><ion-icon name="options-outline" ></ion-icon></li></a>
+					<a href="incomming-lessons.html"><li ><ion-icon name="calendar-outline" ></ion-icon></li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="Subject.html"><li ><ion-icon name="book-outline" ></ion-icon></li></a>
+					<a href="Grades.html"><li class="active"><ion-icon name="bar-chart-outline" ></ion-icon></li></a>
+					<a href="Message.html"><li ><ion-icon name="mail-outline" ></ion-icon></li></a>
+
+				</ul>
+			</div>
+
+
+			<div class="student-img">
+				<div class="studentprof" onclick="showStudent()">
+					<div class="student">
+					<img src="./images/beluga.jpg" width="45px">
+					</div>
+				</div>
+
+				<div class="logout">
+					<li><ion-icon name="log-out-outline"></ion-icon></li>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- menubar -->
+		<div class="sidebar" id="sidebar">
+				<div class="logo">
+					<div class="logo-cont">
+					<img src="https://static.wixstatic.com/media/61bf60_f2f5025fdcbe433c99b03950aeb0f71f~mv2.png" width="40px">
+					</div>
+				</div>
+
+			<ul >
+					<a href="index.html"><li ><ion-icon name="options-outline" ></ion-icon>Dashboard</li></a>
+					<a href="incomming-lessons.html"><li ><ion-icon name="calendar-outline" ></ion-icon>Incoming lesson</li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="Subject.html"><li ><ion-icon name="book-outline" ></ion-icon>Subject</li></a>
+					<a href="Grades.html"><li class="active"><ion-icon name="bar-chart-outline" ></ion-icon>Grades</li></a>
+					<a href="Message.html"><li ><ion-icon name="mail-outline" ></ion-icon>Message</li></a>
+
+
+				</ul>
+ 
+			<div class="student-img">
+				<a href="#Student-Profile1">
+					<div class="studentprof" onclick="showStudent()">
+					<div class="student">
+					<img src="./images/beluga.jpg" width="45px">
+
+				</div>
+				<div class="name">
+					<span class="name-active">Beluga Abellana</span>
+					<span>Student</span>
+				</div>
+				</div>
+				</a>
+
+				<div class="logout">
+					<a href="login-page.html" style="text-decoration: none;"><button><ion-icon name="log-out-outline"></ion-icon>Logout</button></a>
+				</div>
+			</div>
+
+		</div>
+
+
+		
+
+		<!-- Grades -->
+		<div class="Grades-container" id="Grades-container">
+		  	<label>Grade's</label>
+
+			<div class="grades-content">
+				<table>
+
+					<!-- table header -->
+					<tr>
+						<th>Subject</th>
+						<th class="techer">Teacher Name</th>
+						<th>Section</th>
+						<th>First</th>
+						<th>Second</th>
+						<th>Third</th>
+						<th>Fourth</th>
+						<th>Final</th>
+						<th>Remark</th>
+					</tr>
+
+					<!-- Physical Education -->
+					<tr>
+						<td>Physical Education</td>
+						<td class="techer" style="display: flex; align-items: center;">
+							<img src="./images/Edmon.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Edmon Maniago</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">94</td>
+						<td style="text-align: center;">94</td>
+						<td style="text-align: center;">92</td>
+						<td style="text-align: center;">97</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- Physical Education -->
+
+					<!-- Civics -->
+					<tr>
+						<td>Civics</td>
+						<td class="techer"  style="display: flex; align-items: center;">
+							<img src="./images/Me.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Daniel Abellana</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">92</td>
+						<td style="text-align: center;">94</td>
+						<td style="text-align: center;">95</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- Civics -->
+
+					<!-- PSEP -->
+					<tr>
+						<td>PSEP</td>
+						<td  class="techer" style="display: flex; align-items: center;">
+							<img src="./images/Edmon.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Edmon Maniago</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">93</td>
+						<td style="text-align: center;">94</td>
+						<td style="text-align: center;">94</td>
+						<td style="text-align: center;">95</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- PSEP -->
+
+					<!-- SCIENCE -->
+					<tr>
+						<td>PSEP</td>
+						<td class="techer"  style="display: flex; align-items: center;">
+							<img src="./images/rey.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Rey Espora</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">93</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- SCIENCE -->
+
+					<!-- ENGLISH -->
+					<tr>
+						<td>ENGLISH</td>
+						<td class="techer"  style="display: flex; align-items: center;">
+							<img src="./images/Edmon.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Edmon Maniago</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">92</td>
+						<td style="text-align: center;">93</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">96</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- ENGLISH -->
+
+					<!-- MATH -->
+					<tr>
+						<td>MATH</td>
+						<td class="techer"  style="display: flex; align-items: center;">
+							<img src="./images/Me.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Daniel Abellana</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">94</td>
+						<td style="text-align: center;">97</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">93</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- MATH -->
+
+					<!-- FILIPINO -->
+					<tr>
+						<td>FILIPINO</td>
+						<td class="techer"  style="display: flex; align-items: center;">
+							<img src="./images/Edmon.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Edmon Maniago</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">95</td>
+						<td style="text-align: center;">96</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- FILIPINO -->
+
+					<!-- HELE -->
+					<tr>
+						<td>HELE</td>
+						<td class="techer"  style="display: flex; align-items: center;">
+							<img src="./images/rey.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Rey Espora</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">90</td>
+						<td style="text-align: center;">93</td>
+						<td style="text-align: center;">91</td>
+						<td style="text-align: center;">95</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- HELE -->
+
+					<!-- CLE -->
+					<tr>
+						<td>CLE</td>
+						<td class="techer"  style="display: flex; align-items: center;">
+							<img src="./images/Edmon.jpg" style="width:40px; border-radius: 50%;">
+							<dd>Edmon Maniago</dd>
+						</td>
+						<td>Paul</td>
+						<td style="text-align: center;">92</td>
+						<td style="text-align: center;">94</td>
+						<td style="text-align: center;">96</td>
+						<td style="text-align: center;">93</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<!-- CLE -->
+
+					<!-- Total -->
+					<tr>
+						<td colspan="7" style="font-weight: bolder;">Average</td>
+						<td></td>
+						<td class="colspan-6"></td>
+					</tr>
+					<!-- Total -->
+
+
+
+					<!-- <tr>
+						<td>Physical Education</td>
+						<td>Civics</td>
+						<td>PSEP</td>
+						<td>SCIENCE</td>
+						<td>ENGLISH</td>
+						<td>MATH</td>
+						<td>FILIPINO</td>
+						<td>HELE</td>
+						<td>CLE</td>
+					</tr> -->
+
+
+				</table>
+			</div>
+
+		</div>
+
+		<!-- Annoucemnet -->
+		  <div class="Inbox-container" id="Inbox-container">
+		  	<label id="changeMePlease">Message</label>
+
+			<div class="inbox-content">
+				<div class="inbox-left-content">
+					<ul >
+						<li onclick="Message()"><ion-icon name="create-outline"></ion-icon><a href="#Message">Message</a></li>
+						<li onclick="Inbox()"><ion-icon name="mail-unread-outline"></ion-icon><a href="#Inbox">Inbox</a></li>
+						<li onclick="Sent()"><ion-icon name="send-outline"></ion-icon><a href="#Sent">Sent</a></li>
+						<li onclick="Trash()"><ion-icon name="trash-outline"></ion-icon><a href="#Trash">Trash</a></li>
+					</ul>
+				</div>
+
+				<div class="message-form" id="message-from">
+					<form>
+						<textarea placeholder="Send your school concern here..." required></textarea>
+						<span><button type="submit">Submit</button></span>
+					</form>
+				</div>
+
+				<!-- inbox  -->
+				<div class="Inbox-form" id="Inbox-from">
+					<form>
+
+						<!-- sample message -->
+						<div class="inbox-message">
+							<did class="admin">
+								<img src="./images/profile-icon.png" width="45px">
+							</did>
+
+							<div class="admin-message">
+								<p>Greetings...</p>
+							</div>
+
+							<div class="remove-message">
+								<ion-icon name="trash-outline"></ion-icon>
+							</div>
+						</div>
+
+						<!-- sample message -->
+						<div class="inbox-message">
+							<did class="admin">
+								<img src="./images/profile-icon.png" width="45px">
+							</did>
+
+							<div class="admin-message">
+								<p>Testing...</p>
+							</div>
+
+							<div class="remove-message">
+								<ion-icon name="trash-outline"></ion-icon>
+							</div>
+						</div>
+
+						<!-- sample message -->
+						<div class="inbox-message">
+							<did class="admin">
+								<img src="./images/profile-icon.png" width="45px">
+							</did>
+
+							<div class="admin-message">
+								<p>Haluh friends 'V'...</p>
+							</div>
+
+							<div class="remove-message">
+								<ion-icon name="trash-outline"></ion-icon>
+							</div>
+						</div>
+
+						<!-- sample message -->
+						<div class="inbox-message">
+							<did class="admin">
+								<img src="./images/profile-icon.png" width="45px">
+							</did>
+
+							<div class="admin-message">
+								<p>Testing...</p>
+							</div>
+
+							<div class="remove-message">
+								<ion-icon name="trash-outline"></ion-icon>
+							</div>
+						</div>
+
+
+					</form>
+				</div>
+				<!-- inbox  -->
+
+
+
+				<!-- Sent message -->
+				<div class="Sent-form" id="Sent-form">
+
+					<!-- sample sent mesage-->
+					<div class="sent-message">
+						<div class="sender">
+						<img src="./images/beluga.jpg" width="45px">
+					</div>
+
+					<div class="sender-message">
+						<p>Testing...</p>
+					</div>
+
+					<div class="remove-message">
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+					</div>
+
+					<!-- sample sent mesage-->
+					<div class="sent-message">
+						<div class="sender">
+							<img src="./images/beluga.jpg" width="45px">
+						</div>
+
+					<div class="sender-message">
+						<p>Testing...</p>
+					</div>
+
+					<div class="remove-message">
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+					</div>
+					<!-- sample sent mesage-->
+					<div class="sent-message">
+						<div class="sender">
+						<img src="./images/beluga.jpg" width="45px">
+					</div>
+
+					<div class="sender-message">
+						<p>Testing...</p>
+					</div>
+
+					<div class="remove-message">
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+					</div>
+
+					<!-- sample sent mesage-->
+					<div class="sent-message">
+						<div class="sender">
+							<img src="./images/beluga.jpg" width="45px">
+						</div>
+
+					<div class="sender-message">
+						<p>Testing...</p>
+					</div>
+
+					<div class="remove-message">
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+					</div>
+
+				</div>
+				<!-- Sent message -->
+
+				<!-- trash container -->
+				<div class="Trash-form" id="Trash-form">
+					<div class="trash-message">
+						<div class="no-trash">
+							<ion-icon name="trash-outline"></ion-icon>
+							<label>No trash for now...</label>
+						</div>
+					</div>
+				</div>
+				<!-- trash container -->
+
+
+			</div>
+		  </div>   
+
+
+
+		  
+
+
+	</div>
+	</div>
+
+</body>
+
+<!-- ion icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>
+
+												
+
+

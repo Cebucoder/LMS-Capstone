@@ -16,8 +16,46 @@
 </head>
 <body>
 
+
+
+		<div class="sideicon" id="sidebar-icon">
+
+			<div class="icons-list" >
+				<!-- icons -->
+				<ul onclick="myFunction(event)">
+					<a href="#Dashboard"><li class="active" onclick="dashboard()"><ion-icon name="options-outline" ></ion-icon></li></a>
+					<a href="#Lessons"><li onclick="calendar()" ><ion-icon name="calendar-outline" ></ion-icon></li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="#Subjects"><li onclick="subject()"><ion-icon name="book-outline" ></ion-icon></li></a>
+					<a href="#Grades"><li onclick="grades()"><ion-icon name="bar-chart-outline" ></ion-icon></li></a>
+					<a href="#Message"><li onclick="inboxs()"><ion-icon name="mail-outline" ></ion-icon></li></a>
+
+				</ul>
+
+			</div>
+
+
+			<div class="student-img">
+				<div class="studentprof" onclick="showStudent()">
+					<div class="student">
+					<img src="./images/beluga.jpg" width="45px">
+					</div>
+				</div>
+
+				<div class="logout">
+					<li><ion-icon name="log-out-outline"></ion-icon></li>
+				</div>
+			</div>
+			
+		</div>
+
 	<div class="maincontainer">
 		<div class="header-container">
+			<!-- menubar -->
+		<div class="menu" onclick="menu()">
+			<ion-icon name="menu"></ion-icon>
+		</div>
+
 			<div class="head-navlink">
 				<li ><a  href="physical-edu.html">Announcement</a></li>
 				<li ><a  href="">Assignments</a></li>
@@ -283,6 +321,6 @@ function toolsPopup() {
 <script type="text/javascript" src="./js/main.js"></script>
 
 
-<script src="./js/main.js"></script>
+<!-- <script src="./js/main.js"></script> -->
 
 </html>
