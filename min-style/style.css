@@ -17,6 +17,9 @@
 	font-family: 'Poppins', sans-serif;
 
 }
+body{
+	background: #f7f7f7;
+}
 .mother{
 	display: flex;
 	flex-direction: column;

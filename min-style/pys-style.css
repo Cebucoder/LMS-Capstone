@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 	font-family: 'Poppins',sans-serif;
 }
+body{
+	background: #f7f7f7;
+
+}
 .maincontainer{
 	width: 100%;
 	height: auto;
@@ -45,6 +49,7 @@
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	background: #f7f7f7;
+	padding-bottom: 50px;
 
 	
 }
