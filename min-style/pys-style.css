@@ -9,11 +9,13 @@
 .maincontainer{
 	width: 100%;
 	height: auto;
+/*	max-height: 1000px;*/
 	padding-top: 90px;
 	padding-left: 20px;
 	padding-right: 20px;
 	background: #fff;
 	background: #f7f7f7;
+	position: relative;
 }
 
 .menu{
