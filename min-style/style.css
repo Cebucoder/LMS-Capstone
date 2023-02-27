@@ -46,8 +46,8 @@ body{
 .main-container{
 	width: 100%;
 	height: 100vh;
-	background: #eee;
-/*	background: url("../images/back1.png");*/
+/*	background: #eee;*/
+	background: url("../images/back1.png");
 	background-size: cover;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -1098,7 +1098,7 @@ body{
 
 /*message from*/
 .message-form{
-	width: auto;
+	width: 100%;
 	height: 100%;
 /*	background: pink;*/
 	padding-right: 10px;
@@ -1114,7 +1114,7 @@ body{
 .message-form textarea{
 	width: 100%;
 	height: 250px;
-	max-width: 680px;
+	max-width: 100%;
 	min-width: 680px;
 	min-height: 250px;
 	color: #000;
@@ -1152,7 +1152,7 @@ body{
 
 /*inbox form*/
 .Inbox-form{
-	width: auto;
+	width: 100%;
 	height: 100%;
 /*	background: pink;*/
 /*	max-height: 100%;*/
@@ -1165,7 +1165,8 @@ body{
 	display: none;
 }
 .inbox-message{
-	width: 600px;
+/*	width: 600px;*/
+	width: 100%;
 	height: 60px;
 	padding: 10px;
 	border-radius: 5px;
@@ -1211,7 +1212,7 @@ body{
 
 /*sent message*/
 .Sent-form{
-	width: auto;
+	width: 100%;
 	height: 100%;
 /*	background: pink;*/
 /*	max-height: 100%;*/
@@ -1227,7 +1228,8 @@ body{
 	display: flex;
 }
 .sent-message{
-	width: 600px;
+/*	width: 600px;*/
+	width: 100%;
 	height: 60px;
 	padding: 10px;
 	border-radius: 5px;
@@ -1263,7 +1265,7 @@ body{
 
 /*Trash messages*/
 .Trash-form{
-	width: auto;
+	width: 100%;
 	height: 100%;
 /*	background: pink;*/
 /*	max-height: 100%;*/
@@ -1276,7 +1278,8 @@ body{
 	display: none;
 }
 .trash-message{
-	width: 600px;
+/*	width: 600px;*/
+	width: 100%;
 	height: 100%;
 	padding: 10px;
 	border-radius: 5px;

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./min-style/style.css">
+	<title>sent</title>
+
+	<style type="text/css">
+		.Inbox-container{
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Annoucemnet -->
+		  <div class="Inbox-container" id="Inbox-container">
+		  	<label id="changeMePlease">Message</label>
+
+			<div class="inbox-content">
+				<div class="inbox-left-content">
+					<ul >
+						<li onclick="Message()"><ion-icon name="create-outline"></ion-icon><a href="#Message">Message</a></li>
+						<li onclick="Inbox()"><ion-icon name="mail-unread-outline"></ion-icon><a href="#Inbox">Inbox</a></li>
+						<li onclick="Sent()"><ion-icon name="send-outline"></ion-icon><a href="#Sent">Sent</a></li>
+						<li onclick="Trash()"><ion-icon name="trash-outline"></ion-icon><a href="#Trash">Trash</a></li>
+					</ul>
+				</div>
+
+				<div class="message-form" id="message-from">
+					<form>
+						<textarea placeholder="Send your school concern here..." required></textarea>
+						<span><button type="submit">Submit</button></span>
+					</form>
+				</div>
+
+				<!-- inbox  -->
+				<div class="Inbox-form" id="Inbox-from">
+					<form>
+
+						<!-- sample message -->
+						<div class="inbox-message">
+							<did class="admin">
+								<img src="./images/profile-icon.png" width="45px">
+							</did>
+
+							<div class="admin-message">
+								<p>Greetings...</p>
+							</div>
+
+							<div class="remove-message">
+								<ion-icon name="trash-outline"></ion-icon>
+							</div>
+						</div>
+
+						<!-- sample message -->
+						<div class="inbox-message">
+							<did class="admin">
+								<img src="./images/profile-icon.png" width="45px">
+							</did>
+
+							<div class="admin-message">
+								<p>Testing...</p>
+							</div>
+
+							<div class="remove-message">
+								<ion-icon name="trash-outline"></ion-icon>
+							</div>
+						</div>
+
+						<!-- sample message -->
+						<div class="inbox-message">
+							<did class="admin">
+								<img src="./images/profile-icon.png" width="45px">
+							</did>
+
+							<div class="admin-message">
+								<p>Haluh friends 'V'...</p>
+							</div>
+
+							<div class="remove-message">
+								<ion-icon name="trash-outline"></ion-icon>
+							</div>
+						</div>
+
+						<!-- sample message -->
+						<div class="inbox-message">
+							<did class="admin">
+								<img src="./images/profile-icon.png" width="45px">
+							</did>
+
+							<div class="admin-message">
+								<p>Testing...</p>
+							</div>
+
+							<div class="remove-message">
+								<ion-icon name="trash-outline"></ion-icon>
+							</div>
+						</div>
+
+
+					</form>
+				</div>
+				<!-- inbox  -->
+
+
+
+				<!-- Sent message -->
+				<div class="Sent-form" id="Sentform">
+
+					<!-- sample sent mesage-->
+					<div class="sent-message">
+						<div class="sender">
+						<img src="./images/beluga.jpg" width="45px">
+					</div>
+
+					<div class="sender-message">
+						<p>Testing...</p>
+					</div>
+
+					<div class="remove-message">
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+					</div>
+
+					<!-- sample sent mesage-->
+					<div class="sent-message">
+						<div class="sender">
+							<img src="./images/beluga.jpg" width="45px">
+						</div>
+
+					<div class="sender-message">
+						<p>Testing...</p>
+					</div>
+
+					<div class="remove-message">
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+					</div>
+					<!-- sample sent mesage-->
+					<div class="sent-message">
+						<div class="sender">
+						<img src="./images/beluga.jpg" width="45px">
+					</div>
+
+					<div class="sender-message">
+						<p>Testing...</p>
+					</div>
+
+					<div class="remove-message">
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+					</div>
+
+					<!-- sample sent mesage-->
+					<div class="sent-message">
+						<div class="sender">
+							<img src="./images/beluga.jpg" width="45px">
+						</div>
+
+					<div class="sender-message">
+						<p>Testing...</p>
+					</div>
+
+					<div class="remove-message">
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+					</div>
+
+				</div>
+				<!-- Sent message -->
+
+				<!-- trash container -->
+				<div class="Trash-form" id="Trash-form">
+					<div class="trash-message">
+						<div class="no-trash">
+							<ion-icon name="trash-outline"></ion-icon>
+							<label>No trash for now...</label>
+						</div>
+					</div>
+				</div>
+				<!-- trash container -->
+
+
+			</div>
+		  </div>   
+
+</body>
+
+<script src="./js/main.js"></script>
+<script type="./js/send.js"></script>
+
+<script type="text/javascript">
+	showMessage()
+</script>
+
+</html>

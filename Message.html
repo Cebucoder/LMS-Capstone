@@ -12,6 +12,131 @@
 		.Inbox-container{
 			display: flex;
 		}
+		.removeMessage{
+			width: 100%;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0.2);
+			position: fixed;
+			left: 0;
+			top: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			display: none;
+		}
+		.showMessageCont{
+			display: flex;
+		}
+
+		.removeContent{
+			width: 400px;
+			height: 250px;
+			border-radius: 10px;
+			background: #fff;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 30px;
+			text-align: center;
+		}
+		.removeContent h1{
+			font-size: 20px;
+
+		}
+		.btn{
+			width: 100%;
+			height: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.btn button{
+			width: 150px;
+			height: 40px;
+		}
+		.success{
+			width: 300px;
+			height: 80px;
+			border-radius: 5px;
+			background: #fff;
+			border:1px solid #0853C4;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-top: 10px;
+			position: absolute;
+			top: 0;
+			left:50%;
+			transform: translate(-50%,-50%);
+			display: none;
+			opacity: 0;
+			translate: 0.6s;
+			z-index: 1;
+		}
+		.success label{
+			font-size: 16px;
+			color: #0853C4;
+		}
+		.show-success{
+			display: flex;
+			top: 50px;
+			opacity: 1;
+			transition: 0.3;
+		}
+
+		.error{
+			width: 300px;
+			height: 80px;
+			border-radius: 5px;
+			background: #fff;
+			border:1px solid #0853C4;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-top: 10px;
+			position: absolute;
+			top: 0;
+			left:50%;
+			transform: translate(-50%,-50%);
+			display: none;
+			opacity: 0;
+			translate: 0.6s;
+			z-index: 1;
+		}
+		.error label{
+			font-size: 16px;
+			color: #0853C4;
+		}
+		.show-error{
+			display: flex;
+			top: 50px;
+			opacity: 1;
+			transition: 0.3;
+		}
+		.trash-message{
+			height: 60px;
+			margin: 3px 0;
+		}
+		.empty-trash{
+			width: 100%;
+			height: 500px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #fff;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			flex-direction: column;
+			color: rgba(0, 0, 0, 0.4);
+		}
+		.remove-trash()
+		.empty-trash ion-icon{
+			font-size: 60px;
+		}
+		.empty-trash label{
+			padding: 20px 0;
+		}
 	</style>
 
 </head>
@@ -79,8 +204,8 @@
 			<div class="student-img">
 				<a href="#Student-Profile1">
 					<div class="studentprof" onclick="showStudent()">
-					<div class="student">
-					<img src="./images/beluga.jpg" width="45px">
+					<div class="student" id="student">
+					<img id="" src="./images/beluga.jpg" width="45px">
 
 				</div>
 				<div class="name">
@@ -115,8 +240,8 @@
 
 				<div class="message-form" id="message-from">
 					<form>
-						<textarea placeholder="Send your school concern here..." required></textarea>
-						<span><button type="submit">Submit</button></span>
+						<textarea id="Mymessage" placeholder="Send your school concern here..." required></textarea>
+						<span><button  onclick="SendMessage()">Submit</button></span>
 					</form>
 				</div>
 
@@ -196,21 +321,21 @@
 
 					<!-- sample sent mesage-->
 					<div class="sent-message">
-						<div class="sender">
-						<img src="./images/beluga.jpg" width="45px">
+						<div class="sender" id="sender">
+							<img src="./images/beluga.jpg" width="45px">
+						</div>
+
+					<div class="sender-message" id="Sent-Messages">
+						<p >Testing...</p>
 					</div>
 
-					<div class="sender-message">
-						<p>Testing...</p>
-					</div>
-
-					<div class="remove-message">
+					<div class="remove-message" onclick="removeMessage()">
 						<ion-icon name="trash-outline"></ion-icon>
 					</div>
 					</div>
 
 					<!-- sample sent mesage-->
-					<div class="sent-message">
+					<!-- <div class="sent-message">
 						<div class="sender">
 							<img src="./images/beluga.jpg" width="45px">
 						</div>
@@ -222,9 +347,9 @@
 					<div class="remove-message">
 						<ion-icon name="trash-outline"></ion-icon>
 					</div>
-					</div>
+					</div> -->
 					<!-- sample sent mesage-->
-					<div class="sent-message">
+					<!-- <div class="sent-message">
 						<div class="sender">
 						<img src="./images/beluga.jpg" width="45px">
 					</div>
@@ -236,10 +361,10 @@
 					<div class="remove-message">
 						<ion-icon name="trash-outline"></ion-icon>
 					</div>
-					</div>
+					</div> -->
 
 					<!-- sample sent mesage-->
-					<div class="sent-message">
+					<!-- <div class="sent-message">
 						<div class="sender">
 							<img src="./images/beluga.jpg" width="45px">
 						</div>
@@ -251,18 +376,40 @@
 					<div class="remove-message">
 						<ion-icon name="trash-outline"></ion-icon>
 					</div>
-					</div>
+					</div> -->
 
 				</div>
+
+				<!-- mesage sent success -->
+				<div class="success" id="success">
+					<label>Message sent successfully</label>
+				</div>
+
+				<!-- mesage sent error -->
+				<div class="error" id="error">
+					<label>No inputed message!</label>
+				</div>
+
+
+				<!-- Remove confriramitom -->
+				<div class="removeMessage" id="removeMessage">
+					<div class="removeContent">
+						<h1>Deleted message will be move to trash</h1>
+						<p>Would you like to continue?</p>
+						<div class="btn">
+							<button onclick="remove()">Remove</button>
+							<button onclick="cancel()">Cancel</button>
+						</div>
+					</div>
+				</div>
+
 				<!-- Sent message -->
 
 				<!-- trash container -->
 				<div class="Trash-form" id="Trash-form">
-					<div class="trash-message">
-						<div class="no-trash">
-							<ion-icon name="trash-outline"></ion-icon>
-							<label>No trash for now...</label>
-						</div>
+					<div class="empty-trash">
+						<ion-icon name = "trash-outline"></ion-icon>
+						<label>No trash for now</label>
 					</div>
 				</div>
 				<!-- trash container -->
@@ -284,6 +431,18 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script type="text/javascript" src="./js/main.js"></script>
+<script src="./js/send.js"></script>
+
+
+<!-- message Sript -->
+<script type="text/javascript">
+
+
+
+
+
+</script>
+
 
 </html>
 
