@@ -54,6 +54,7 @@
 		.btn button{
 			width: 150px;
 			height: 40px;
+			font-size: 16px;
 		}
 		.success{
 			width: 300px;
@@ -243,7 +244,7 @@
 				<div class="message-form" id="message-from">
 					<form>
 						<textarea id="Mymessage" placeholder="Send your school concern here..." required></textarea>
-						<span><button  onclick="SendMessage()">Submit</button></span>
+						<span><button type="submit" onclick="SendMessage()">Submit</button></span>
 					</form>
 				</div>
 
@@ -258,7 +259,7 @@
 							</did>
 
 							<div class="admin-message">
-								<p>Greetings...</p>
+								<p>We would like to inform you that ...</p>
 							</div>
 
 							<div class="remove-message">
@@ -273,7 +274,7 @@
 							</did>
 
 							<div class="admin-message">
-								<p>Testing...</p>
+								<p>New Update...</p>
 							</div>
 
 							<div class="remove-message">
@@ -288,7 +289,7 @@
 							</did>
 
 							<div class="admin-message">
-								<p>Haluh friends 'V'...</p>
+								<p>Your request will be...</p>
 							</div>
 
 							<div class="remove-message">
@@ -319,7 +320,7 @@
 
 
 				<!-- Sent message -->
-				<div class="Sent-form" id="Sent-form">
+				<div class="Sent-form" id="Sentform">
 
 					<!-- sample sent mesage-->
 					<div class="sent-message">
@@ -331,7 +332,7 @@
 						<p >Testing...</p>
 					</div>
 
-					<div class="remove-message" onclick="removeMessage()">
+					<div class="remove-message" onclick="removeMessages()">
 						<ion-icon name="trash-outline"></ion-icon>
 					</div>
 					</div>
@@ -408,7 +409,7 @@
 				<!-- Sent message -->
 
 				<!-- trash container -->
-				<div class="Trash-form" id="Trash-form">
+				<div class="Trash-form" id="Trashform">
 					<div class="empty-trash">
 						<ion-icon name = "trash-outline"></ion-icon>
 						<label>No trash for now</label>

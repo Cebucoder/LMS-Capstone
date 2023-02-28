@@ -147,7 +147,7 @@ function menu(){
 
 let compose = document.getElementById("message-from");
 let message = document.getElementById("Inbox-from");
-let sent = document.getElementById("Sent-form");
+let sent = document.getElementById("Sentform");
 let trash = document.getElementById("Trash-form");
 let label  = document.getElementById("changeMePlease").innerHTML;
 
