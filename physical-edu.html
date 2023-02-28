@@ -27,6 +27,115 @@
 .sidebar{
 	padding-top: 50px;
 }
+.popup-message{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	opacity: 0;
+	transition: 0.4s;
+}
+.show-popup-message{
+	display: flex;
+	opacity: 1;
+}
+.Message-Content{
+	width: 500px;
+	height: 370px;
+	background: #fff;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	position: relative;
+}
+.Message-Header{
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+ }
+ .Message-Header label{
+ 	font-size: 25px;
+ 	font-weight: bolder;
+ 	color: rgba(0, 0, 0, 0.8);
+ 	padding: 0 20px;
+ }
+ .Message-Content input{
+ 	width: 100%;
+ 	height: 60px;
+ 	padding-left: 15px;
+ 	border: 1px solid #0853C4;
+ 	border-radius: 5px;
+ 	outline-color: #0853C4;
+
+ }
+ .Message-Content input:hover{
+ 	border: 2px solid #0853C4;
+ }
+ .Message-Content button{
+ 	width: 100%;
+ 	height: 60px;
+ 	background: #0853C4;
+ 	color: #fff;
+ 	font-size: 16px;
+ 	border-radius: 50px;
+ 	border: none;
+ 	margin-top: 40px;
+ 	transition: 0.1s;
+ }
+ .Message-Content button:hover{
+ 	background: #fff;
+ 	border: 2px solid #0853C4;
+ 	color: #0853C4;
+ 	transition: 0.3s;
+ }
+ .Message-Content span{
+ 	width: 100%;
+ 	height: 80px;
+ 	display: flex;
+ 	justify-content: right;
+ 	align-items: center;
+ 	font-size: 30px;
+/* 	background: pink;*/
+ 	position: absolute;
+ 	bottom: 0;
+ 	right: 0;
+ }
+ .Message-Content span ion-icon{
+ 	padding: 20px;
+ 	color: rgba(0, 0, 0, 0.5);
+ }
+ .close-Popup{
+ 	position: absolute;
+ 	top: 10px;
+ 	right: 10px;
+ 	width: 40px;
+ 	height: 40px;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	font-size: 30px;
+ 	border-radius: 50px;
+ 	transition: 0.1s;
+ }
+ .close-Popup:hover{
+ 	background:rgba(0, 0, 0, 0.1);
+ 	color: #0853C4;
+ 	transition: 0.3s;
+
+ }
+ .send-message{
+ 	cursor: pointer;
+ }
 @media only screen and (max-width:590px){
 	.sideicon{
 	display: flex;
@@ -38,6 +147,32 @@
 <body>
 
 	<div class="maincontainer">
+
+
+		<!-- send teacehr messsage -->
+		<div class="popup-message" id="popup-message">
+			<div class="Message-Content" id="Message-Content">
+				<div class="Message-Header">
+
+					<div class="close-Popup" onclick="closePopUp()">
+						<ion-icon name = "close"></ion-icon>
+					</div>
+
+					<label>Send Message</label>
+					<div class="header-logo">
+						<img src="./images/owl.png" width="55px">
+					</div>
+				</div>
+
+				<input type="text" name="" placeholder="Communicate openly with your teacher...">
+
+				<button>Send Message</button>
+
+				<span><ion-icon name="information-circle-outline"></ion-icon></span>
+
+			</div>
+		</div>
+		<!-- send teacehr messsage -->
 
 			<!-- menubar -->
 		<div class="menu" onclick="menu()">
@@ -153,7 +288,7 @@
 				 </div>
 
 				 <div class="announcement">
-				 	<div class="send-message">
+				 	<div class="send-message" onclick="sendMessagePop()">
 				 		<div class="user-icon">
 				 			<img src="./images/profile-icon.png" width="38px">
 				 		</div>
@@ -308,8 +443,25 @@ function toolsPopup() {
 }
 
 
+</script>
 
+
+<!-- clse-PopUP -->
+<script type="text/javascript">
+	
+let Popup = document.getElementById("popup-message");
+
+
+function sendMessagePop(){
+	Popup.classList.add("show-popup-message");
+}
+
+function closePopUp(){
+	Popup.classList.remove("show-popup-message")
+}
 
 </script>
+
+
 
 </html>
