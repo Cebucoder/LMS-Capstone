@@ -3,9 +3,313 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>LMS|English-edu</title>
+	<link rel="stylesheet" type="text/css" href="./min-style/pys-style.css">
+	<link rel="stylesheet" type="text/css" href="./min-style/style.css">
+	<title>LMS | English</title>
+
+	<style type="text/css">
+		.menu{
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 9;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+/*	max-height: 1000px;*/
+}
+.sideicon{
+	display: none;
+}
+.sidebar{
+	padding-top: 50px;
+}
+@media only screen and (max-width:590px){
+	.sideicon{
+	display: flex;
+	}
+}
+	</style>
+
 </head>
 <body>
-<h1>English</h1>
+
+	<div class="maincontainer">
+
+			<!-- menubar -->
+		<div class="menu" onclick="menu()">
+			<ion-icon name="menu"></ion-icon>
+		</div>
+		
+
+		<div class="sideicon" id="sidebar-icon">
+
+			<div class="icons-list" >
+				<!-- icons -->
+				<ul >
+					<a href="index.html"><li ><ion-icon name="options-outline" ></ion-icon></li></a>
+					<a href="incomming-lessons.html"><li ><ion-icon name="calendar-outline" ></ion-icon></li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="Subject.html"><li class="active"><ion-icon name="book-outline" ></ion-icon></li></a>
+					<a href="Grades.html"><li ><ion-icon name="bar-chart-outline" ></ion-icon></li></a>
+					<a href="Message.html"><li ><ion-icon name="mail-outline" ></ion-icon></li></a>
+
+				</ul>
+			</div>
+
+
+			<div class="student-img">
+				<div class="studentprof" onclick="showStudent()">
+					<a href="student-profile1.html">
+						<div class="student">
+							<img src="./images/beluga.jpg" width="45px">
+						</div>
+					</a>
+				</div>
+
+				<div class="logout">
+					<li><ion-icon name="log-out-outline"></ion-icon></li>
+				</div>
+			</div>
+			
+		</div>
+
+				<!-- menubar -->
+		<div class="sidebar" id="sidebar">
+				<div class="logo">
+					<div class="logo-cont">
+					<img src="https://static.wixstatic.com/media/61bf60_f2f5025fdcbe433c99b03950aeb0f71f~mv2.png" width="40px">
+					</div>
+				</div>
+ 
+			<ul >
+					<a href="index.html"><li ><ion-icon name="options-outline" ></ion-icon>Dashboard</li></a>
+					<a href="incomming-lessons.html"><li ><ion-icon name="calendar-outline" ></ion-icon>Incoming lesson</li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="Subject.html"><li class="active"><ion-icon name="book-outline" ></ion-icon>Subject</li></a>
+					<a href="Grades.html"><li ><ion-icon name="bar-chart-outline" ></ion-icon>Grades</li></a>
+					<a href="Message.html"><li ><ion-icon name="mail-outline" ></ion-icon>Message</li></a>
+
+
+				</ul>
+ 
+			<div class="student-img">
+				<a href="#Student-Profile1">
+					<div class="studentprof" onclick="showStudent()">
+					<div class="student">
+					<img src="./images/beluga.jpg" width="45px">
+
+				</div>
+				<div class="name">
+					<span class="name-active">Beluga Abellana</span>
+					<span>Student</span>
+				</div>
+				</div>
+				</a>
+
+				<div class="logout">
+					<a href="login-page.html" style="text-decoration: none;"><button><ion-icon name="log-out-outline"></ion-icon>Logout</button></a>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="header-container">
+
+		
+
+			<div class="head-navlink">
+				<li class="active"><a  href="">Announcement</a></li>
+				<li ><a  href="">Assignments</a></li>
+				<li><a  href="people.html">People</a></li>
+			</div>
+		</div>
+		<div class="stream-cont">
+			<div class="sub-cont">
+				<!-- overlay -->
+				<div class="overlay"></div>
+				<div class="sub-banner">
+					<img src="./banners/English_thumb.jpg" width="100%">
+				</div>
+
+
+				<div class="subject-label">
+					<h1>English</h1>
+					<small>Grade 4 Paul</small>
+					<small>Teacher: Edmon Maniago</small>
+				</div>
+			</div>
+
+			<!-- anoucemet ad upcoming assingment -->
+			<div class="announce-content">
+				 <div class="upcomming">
+				 	<label>Upcoming</label>
+				 	<small>Nice. no work due for now!</small>
+				 	<span>View all</span>
+				 </div>
+
+				 <div class="announcement">
+				 	<div class="send-message">
+				 		<div class="user-icon">
+				 			<img src="./images/profile-icon.png" width="38px">
+				 		</div>
+				 		<span>Send message to your teacher.</span>
+				 	</div>
+
+				 	<!-- announcemnt 1 -->
+				 	<div class="announcement-list">
+				 		<div class="task-icon">
+				 			<ion-icon name="document-text-outline"></ion-icon>
+
+				 		</div>
+				 		<span>
+				 			<small>Edmon Maniago posted new task: Lesson 4: English society</small>
+				 			<small>Feb 23</small>
+				 		</span>
+
+				 		<div class="tools" onclick="toolsPopup()" id="tool">
+				 			<ion-icon name="ellipsis-vertical"></ion-icon>
+
+
+				 			<!-- popu tools-content -->
+				 			<div class="tools-content" id="tools">
+				 				<small>Move to done</small>
+				 				<small>Report issue</small>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	<!-- announcemnt 1 -->
+
+				 	<!-- announcemnt 1 -->
+				 	<div class="announcement-list">
+				 		<div class="task-icon">
+				 			<ion-icon name="document-text-outline"></ion-icon>
+
+				 		</div>
+				 		<span>
+				 			<small>Edmon Maniago posted new task: Lesson 4: English society</small>
+				 			<small>Feb 23</small>
+				 		</span>
+
+				 		<div class="tools" onclick="toolsPopup()" id="tool">
+				 			<ion-icon name="ellipsis-vertical"></ion-icon>
+
+
+				 			<!-- popu tools-content -->
+				 			<div class="tools-content" id="tools">
+				 				<small>Move to done</small>
+				 				<small>Report issue</small>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	<!-- announcemnt 1 -->
+
+				 	<!-- announcemnt 1 -->
+				 	<div class="announcement-list">
+				 		<div class="task-icon">
+				 			<ion-icon name="document-text-outline"></ion-icon>
+
+				 		</div>
+				 		<span>
+				 			<small>Edmon Maniago posted new task: Lesson 4: English society</small>
+				 			<small>Feb 23</small>
+				 		</span>
+
+				 		<div class="tools" onclick="toolsPopup()" id="tool">
+				 			<ion-icon name="ellipsis-vertical"></ion-icon>
+
+
+				 			<!-- popu tools-content -->
+				 			<div class="tools-content" id="tools">
+				 				<small>Move to done</small>
+				 				<small>Report issue</small>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	<!-- announcemnt 1 -->
+
+				 	<!-- announcemnt 1 -->
+				 	<div class="announcement-list">
+				 		<div class="task-icon">
+				 			<ion-icon name="document-text-outline"></ion-icon>
+
+				 		</div>
+				 		<span>
+				 			<small>Edmon Maniago posted new task: Lesson 4: English society</small>
+				 			<small>Feb 23</small>
+				 		</span>
+
+				 		<div class="tools" onclick="toolsPopup()" id="tool">
+				 			<ion-icon name="ellipsis-vertical"></ion-icon>
+
+
+				 			<!-- popu tools-content -->
+				 			<div class="tools-content" id="tools">
+				 				<small>Move to done</small>
+				 				<small>Report issue</small>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	<!-- announcemnt 1 -->
+
+				 	<!-- announcemnt 1 -->
+				 	<div class="announcement-list">
+				 		<div class="task-icon">
+				 			<ion-icon name="document-text-outline"></ion-icon>
+
+				 		</div>
+				 		<span>
+				 			<small>Edmon Maniago posted new task: Lesson 4: English society</small>
+				 			<small>Feb 23</small>
+				 		</span>
+
+				 		<div class="tools" onclick="toolsPopup()" id="tool">
+				 			<ion-icon name="ellipsis-vertical"></ion-icon>
+
+
+				 			<!-- popu tools-content -->
+				 			<div class="tools-content" id="tools">
+				 				<small>Move to done</small>
+				 				<small>Report issue</small>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	<!-- announcemnt 1 -->
+
+
+				 </div>
+			</div>
+
+		</div>
+	</div>
+
 </body>
+
+<!-- ion icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="./js/main.js"></script>
+
+
+<!-- internal js -->
+<script type="text/javascript">
+	
+let tools = document.querySelector('#tools');
+let tool = document.querySelector('#tool');
+
+function toolsPopup() {
+  tools.classList.toggle("show-toolsPup");
+  tool.classList.toggle("tool-back");
+}
+
+
+
+
+</script>
+
 </html>

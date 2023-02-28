@@ -3,18 +3,129 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./min-style/civic.css">
-	
-	<title>LMS|Civics-edu</title>
+	<link rel="stylesheet" type="text/css" href="./min-style/pys-style.css">
+	<link rel="stylesheet" type="text/css" href="./min-style/style.css">
+	<title>LMS | Civics</title>
+
+	<style type="text/css">
+		.menu{
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 9;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+/*	max-height: 1000px;*/
+}
+.sideicon{
+	display: none;
+}
+.sidebar{
+	padding-top: 50px;
+}
+@media only screen and (max-width:590px){
+	.sideicon{
+	display: flex;
+	}
+}
+	</style>
+
 </head>
 <body>
 
 	<div class="maincontainer">
+
+			<!-- menubar -->
+		<div class="menu" onclick="menu()">
+			<ion-icon name="menu"></ion-icon>
+		</div>
+		
+
+		<div class="sideicon" id="sidebar-icon">
+
+			<div class="icons-list" >
+				<!-- icons -->
+				<ul >
+					<a href="index.html"><li ><ion-icon name="options-outline" ></ion-icon></li></a>
+					<a href="incomming-lessons.html"><li ><ion-icon name="calendar-outline" ></ion-icon></li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="Subject.html"><li class="active"><ion-icon name="book-outline" ></ion-icon></li></a>
+					<a href="Grades.html"><li ><ion-icon name="bar-chart-outline" ></ion-icon></li></a>
+					<a href="Message.html"><li ><ion-icon name="mail-outline" ></ion-icon></li></a>
+
+				</ul>
+			</div>
+
+
+			<div class="student-img">
+				<div class="studentprof" onclick="showStudent()">
+					<a href="student-profile1.html">
+						<div class="student">
+							<img src="./images/beluga.jpg" width="45px">
+						</div>
+					</a>
+				</div>
+
+				<div class="logout">
+					<li><ion-icon name="log-out-outline"></ion-icon></li>
+				</div>
+			</div>
+			
+		</div>
+
+				<!-- menubar -->
+		<div class="sidebar" id="sidebar">
+				<div class="logo">
+					<div class="logo-cont">
+					<img src="https://static.wixstatic.com/media/61bf60_f2f5025fdcbe433c99b03950aeb0f71f~mv2.png" width="40px">
+					</div>
+				</div>
+ 
+			<ul >
+					<a href="index.html"><li ><ion-icon name="options-outline" ></ion-icon>Dashboard</li></a>
+					<a href="incomming-lessons.html"><li ><ion-icon name="calendar-outline" ></ion-icon>Incoming lesson</li></a>
+					<!-- <a href="#Student"><li onclick="people()"><ion-icon name="people-outline" ></ion-icon></li></a> -->
+					<a href="Subject.html"><li class="active"><ion-icon name="book-outline" ></ion-icon>Subject</li></a>
+					<a href="Grades.html"><li ><ion-icon name="bar-chart-outline" ></ion-icon>Grades</li></a>
+					<a href="Message.html"><li ><ion-icon name="mail-outline" ></ion-icon>Message</li></a>
+
+
+				</ul>
+ 
+			<div class="student-img">
+				<a href="#Student-Profile1">
+					<div class="studentprof" onclick="showStudent()">
+					<div class="student">
+					<img src="./images/beluga.jpg" width="45px">
+
+				</div>
+				<div class="name">
+					<span class="name-active">Beluga Abellana</span>
+					<span>Student</span>
+				</div>
+				</div>
+				</a>
+
+				<div class="logout">
+					<a href="login-page.html" style="text-decoration: none;"><button><ion-icon name="log-out-outline"></ion-icon>Logout</button></a>
+				</div>
+			</div>
+
+		</div>
+
+
 		<div class="header-container">
+
+		
+
 			<div class="head-navlink">
-				<li><a href="">Announcement</a></li>
-				<li><a href="">Assignments</a></li>
-				<li><a href="">People</a></li>
+				<li class="active"><a  href="">Announcement</a></li>
+				<li ><a  href="">Assignments</a></li>
+				<li><a  href="people.html">People</a></li>
 			</div>
 		</div>
 		<div class="stream-cont">
@@ -200,4 +311,5 @@ function toolsPopup() {
 
 
 </script>
+
 </html>

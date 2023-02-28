@@ -119,11 +119,11 @@
 
 // ==============================================
 let AllMessage = [
-	{
-		studentImg: "./images/beluga.jpg",
-		studentMessages: "Hello",
-		// // productPrice: 400
-	}
+	// {
+	// 	// studentImg: "./images/beluga.jpg",
+	// 	// studentMessages: "Hello",
+	// 	// // // productPrice: 400
+	// }
 	
 ];
 
@@ -145,6 +145,10 @@ function SendMessage(){
 	let messages  = document.getElementById("Mymessage").value;
 	let img = document.getElementById("sender").src = "./images/beluga.jpg" ;
 	let sentMessage = document.querySelector("Sentform");
+
+
+	// trash
+	// let trashMessage = document.querySelector
 
 	
 
@@ -192,7 +196,7 @@ function showMessage(){
 				<p >${Sentform.studentMessages}</p>
 			</div>
 
-			<div class="remove-message" onclick = "removeMessages()">
+			<div class="remove-message" onclick = "remove(${itemNumber})">
 			 	<ion-icon name="trash-outline"></ion-icon>
 			 	</div> 		
 			</div>
@@ -212,14 +216,17 @@ function showMessage(){
 	// alert("Total Amount:"+totalAmount);
 	// document.getElementById("Sentform").innerHTML = sentMessage;
 
+
 }
 	showMessage();
 
 
 
 
-
+let pop = document.getElementById("removeMessage");
 function remove(itemNumber){
+
+
 	messageStorages.splice(itemNumber, 1);
 	localStorage.setItem("messageStorage", JSON.stringify(AllMessage));
 	sentMessage.innerHTML = "";
@@ -230,7 +237,7 @@ function remove(itemNumber){
 
 
 // popup confirm
-let pop = document.getElementById("removeMessage");
+// let pop = document.getElementById("removeMessage");
 function removeMessages(){
 	pop.classList.add("showMessageCont");
 	// taskitem.classList.remove("sent-message");
